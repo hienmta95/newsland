@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a668c035-66fe-43e7-beb6-3b04a52519da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/BietthuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/GioithieuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/MenuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/MinislideController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/NoithatController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/QuanController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/ThanhphoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/TheloaiController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Http/Controllers/VideoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/gioithieu/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/gioithieu/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/gioithieu/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/gioithieu/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/menu/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/menu/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/menu/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/menu/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/minislide/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/minislide/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/minislide/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/minislide/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/noithat/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/noithat/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/noithat/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/noithat/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/quan/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/quan/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/quan/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/quan/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/thanhpho/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/thanhpho/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/thanhpho/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/thanhpho/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/theloai/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/theloai/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/theloai/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/theloai/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/video/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/video/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/video/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Backend/Resources/views/video/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Frontend/Http/Controllers/BietthuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Frontend/Http/Controllers/HomepageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Frontend/Http/Controllers/PageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Frontend/Resources/views/mail/admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Frontend/Resources/views/mail/user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/bietthu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/lienhethanhcong.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/listbietthu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/listvideo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Gioithieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Minislide.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Noithat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Quan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Thanhpho.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Theloai.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Video.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/backend/upload/images/ipsum3-1553158575.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/css/img/bg-heading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/css/img/btn-prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/css/img/icon_hotline_mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/css/img/toTop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/css/jquery.fancybox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/js/jquery.fancybox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/icon_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/newsland.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/spicemart-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/Frontend/Routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrontendController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/Frontend/Http/Controllers/FrontendController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+              <folding>
+                <element signature="e#53#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trangchu.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/trangchu.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/master.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="346" column="20" selection-start-line="346" selection-start-column="20" selection-end-line="346" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bietthu.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/bietthu.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="30" column="117" selection-start-line="30" selection-start-column="117" selection-end-line="30" selection-end-column="117" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="minislide.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/minislide.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>route('home')</find>
+      <find>nha</find>
+      <find>.main-nav .main-menu &gt; li &gt; a</find>
+      <find>registerForm</find>
+      <find>getLienhe</find>
+      <find>frontend.</find>
+      <find>href</find>
+      <find>$data['trang']</find>
+      <find>detail</find>
+      <find>data</find>
+      <find>light</find>
+      <find>icon-close</find>
+      <find>icon</find>
+      <find>image</find>
+      <find>'prdGallerys</find>
+      <find>prdGallerys</find>
+      <find>mobile-header uk-hidden-large</find>
+      <find>menu</find>
+      <find>slug</find>
+      <find>04468f</find>
+      <find>vitri</find>
+      <find>open-featured</find>
+      <find>keyword</find>
+      <find>$trang</find>
+      <find>descrip2</find>
+      <find>$videoSidebar</find>
+      <find>search</find>
+      <find>route</find>
+      <find>didong</find>
+      <find>open-fixedform</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>info</replace>
+      <replace>$title</replace>
+      <replace>$noidung</replace>
+      <replace>$description</replace>
+      <replace>[$tencongty]</replace>
+      <replace>catalogs</replace>
+      <replace>$congnghe</replace>
+      <replace>duan</replace>
+      <replace>sanpham</replace>
+      <replace>$tintucDetail</replace>
+      <replace>home</replace>
+      <replace>news-land-slug</replace>
+      <replace>title</replace>
+      <replace>noithat</replace>
+      <replace>nội thất</replace>
+      <replace>Minislide</replace>
+      <replace>thanhpho</replace>
+      <replace>quan</replace>
+      <replace>theloai</replace>
+      <replace>menu</replace>
+      <replace>giới thiệu</replace>
+      <replace>gioithieu</replace>
+      <replace>video</replace>
+      <replace>bietthu</replace>
+      <replace>sdtcongty</replace>
+      <replace>minislide</replace>
+      <replace>route('homepage')</replace>
+      <replace>$trang</replace>
+      <replace>item</replace>
+      <replace>77b53c</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/public/ngocdiep/css/img</dir>
+      <dir>$PROJECT_DIR$/Modules</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/Video.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/video/show.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/video/update.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/video/index.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/video/create.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Http/Controllers/VideoController.php" />
+        <option value="$PROJECT_DIR$/storage/framework/views/75ecabf480b2eb21240945cc3c1a7b1ab92c6eea.php" />
+        <option value="$PROJECT_DIR$/app/Bietthu.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/show.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/minislide/show.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Http/Controllers/MinislideController.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Routes/web.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/thongtin/update.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/public/frontend/css/core.css" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/chitietsanpham.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/slide.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/tintuc.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Http/Controllers/PageController.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/chitiettintuc.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/listbietthu.blade.php" />
+        <option value="$PROJECT_DIR$/public/frontend/css/reset.css" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Http/Controllers/BietthuController.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/index.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/layouts/main-sidebad.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Providers/FrontendServiceProvider.php" />
+        <option value="$PROJECT_DIR$/public/frontend/css/uikit.modify.css" />
+        <option value="$PROJECT_DIR$/public/frontend/css/library.css" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Http/Controllers/HomepageController.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Http/Controllers/BietthuController.php" />
+        <option value="$PROJECT_DIR$/public/frontend/css/style.css" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/listvideo.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/lienhethanhcong.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/lienhe/show.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/lienhe/update.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/lienhe/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Notifications/ToAdmin.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/mail/user.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/lienhe.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/mail/admin.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/create.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/update.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/trangchu.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Routes/web.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Http/Controllers/FrontendController.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/master.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/bietthu.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/minislide.blade.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/Modules/Backend/package.json" />
+      <path value="$PROJECT_DIR$/Modules/Frontend/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/Flot/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/bootstrap-datepicker/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/bootstrap-daterangepicker/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/bootstrap-fileinput/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/chart.js/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/ckeditor/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/dependent-dropdown/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/eonasdan-bootstrap-datetimepicker/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/eve-raphael/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/highcharts/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/html2canvas/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/ion.rangeSlider/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/jquery-knob/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/jquery-slimscroll/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/jquery-ui/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/morris.js/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/select2/package.json" />
+      <path value="$PROJECT_DIR$/public/backend/bower_components/spectrum/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/nwidart/laravel-modules" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/laravel/nexmo-notification-channel" />
+      <path value="$PROJECT_DIR$/vendor/laravel/slack-notification-channel" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/nexmo/client" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-diactoros" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="829" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Notifications" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newsland" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newsland" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/hiengratinx/Workspace/projects/server/moitruonghanoi/public/ngocdiep/css/style.css" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/fonts/UTM Bebas" />
+      <recent name="$PROJECT_DIR$/public/fonts/Roboto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Modules/Frontend/Resources/views" />
+      <recent name="$PROJECT_DIR$/public/frontend/css" />
+      <recent name="$PROJECT_DIR$/public/frontend/js" />
+      <recent name="$PROJECT_DIR$/Modules/Frontend/Resources/views/pages" />
+      <recent name="$PROJECT_DIR$/Modules/Frontend/Http/Controllers" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a668c035-66fe-43e7-beb6-3b04a52519da" name="Default" comment="" />
+      <created>1547351811128</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547351811128</updated>
+      <workItem from="1547351812581" duration="1728000" />
+      <workItem from="1547394179601" duration="1141000" />
+      <workItem from="1547431113337" duration="43000" />
+      <workItem from="1547475685463" duration="9472000" />
+      <workItem from="1547517485860" duration="1626000" />
+      <workItem from="1547568590148" duration="3695000" />
+      <workItem from="1547605394485" duration="44000" />
+      <workItem from="1547626202734" duration="7329000" />
+      <workItem from="1547635103748" duration="1335000" />
+      <workItem from="1547690231868" duration="10069000" />
+      <workItem from="1547717908321" duration="110000" />
+      <workItem from="1547718422909" duration="414000" />
+      <workItem from="1547721662265" duration="76000" />
+      <workItem from="1547743204882" duration="4009000" />
+      <workItem from="1547778664907" duration="22000" />
+      <workItem from="1547783294692" duration="714000" />
+      <workItem from="1547784473684" duration="3449000" />
+      <workItem from="1547794251897" duration="258000" />
+      <workItem from="1547794560057" duration="6000" />
+      <workItem from="1547815013821" duration="6886000" />
+      <workItem from="1547981006047" duration="950000" />
+      <workItem from="1548000011085" duration="6525000" />
+      <workItem from="1548043704207" duration="23000" />
+      <workItem from="1548065865491" duration="1637000" />
+      <workItem from="1548087097785" duration="4774000" />
+      <workItem from="1548121425573" duration="639000" />
+      <workItem from="1548167515335" duration="14286000" />
+      <workItem from="1548209951704" duration="48000" />
+      <workItem from="1548229793719" duration="574000" />
+      <workItem from="1548321421846" duration="12000" />
+      <workItem from="1548335256376" duration="5113000" />
+      <workItem from="1548344262378" duration="10117000" />
+      <workItem from="1548381622883" duration="10000" />
+      <workItem from="1548411554170" duration="673000" />
+      <workItem from="1548507841833" duration="6105000" />
+      <workItem from="1548643368215" duration="345000" />
+      <workItem from="1548919474775" duration="428000" />
+      <workItem from="1548989589244" duration="6427000" />
+      <workItem from="1549334352046" duration="1697000" />
+      <workItem from="1549850161244" duration="16000" />
+      <workItem from="1549882680120" duration="627000" />
+      <workItem from="1549960497737" duration="6202000" />
+      <workItem from="1549981977940" duration="4608000" />
+      <workItem from="1550025882907" duration="19000" />
+      <workItem from="1550503444456" duration="5762000" />
+      <workItem from="1550541721026" duration="72000" />
+      <workItem from="1550563387337" duration="906000" />
+      <workItem from="1550591600022" duration="6681000" />
+      <workItem from="1550630353477" duration="10000" />
+      <workItem from="1550654751318" duration="3542000" />
+      <workItem from="1550674126139" duration="7918000" />
+      <workItem from="1550713983167" duration="19901000" />
+      <workItem from="1550800983096" duration="9000" />
+      <workItem from="1550991301450" duration="25721000" />
+      <workItem from="1551062770842" duration="16000" />
+      <workItem from="1551078350703" duration="4964000" />
+      <workItem from="1551109547515" duration="177000" />
+      <workItem from="1551147610716" duration="73000" />
+      <workItem from="1551178021518" duration="184000" />
+      <workItem from="1551183219517" duration="3034000" />
+      <workItem from="1551232580545" duration="93000" />
+      <workItem from="1551256848135" duration="918000" />
+      <workItem from="1551273600724" duration="408000" />
+      <workItem from="1551321132919" duration="7286000" />
+      <workItem from="1551362945757" duration="1449000" />
+      <workItem from="1551407659720" duration="6552000" />
+      <workItem from="1551450480164" duration="4231000" />
+      <workItem from="1551455858639" duration="238000" />
+      <workItem from="1551539039568" duration="271000" />
+      <workItem from="1551665871584" duration="13000" />
+      <workItem from="1551692150122" duration="1166000" />
+      <workItem from="1551778162940" duration="780000" />
+      <workItem from="1551779839849" duration="226000" />
+      <workItem from="1551876951205" duration="583000" />
+      <workItem from="1551925795336" duration="285000" />
+      <workItem from="1552006333828" duration="1054000" />
+      <workItem from="1552010035550" duration="235000" />
+      <workItem from="1552197525794" duration="1000" />
+      <workItem from="1552489000835" duration="5010000" />
+      <workItem from="1552530985959" duration="47000" />
+      <workItem from="1552666814720" duration="3560000" />
+      <workItem from="1552717677883" duration="916000" />
+      <workItem from="1552841476215" duration="3737000" />
+      <workItem from="1552876173253" duration="30000" />
+      <workItem from="1552919544760" duration="5029000" />
+      <workItem from="1552960880309" duration="13000" />
+      <workItem from="1553099694292" duration="4034000" />
+      <workItem from="1553136642860" duration="40000" />
+      <workItem from="1553153909289" duration="7323000" />
+      <workItem from="1553179824353" duration="1000" />
+      <workItem from="1553179897243" duration="6663000" />
+      <workItem from="1553221401894" duration="15000" />
+      <workItem from="1553222532474" duration="11379000" />
+      <workItem from="1553313687155" duration="2020000" />
+      <workItem from="1553347292355" duration="14934000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="293967000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="829" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32863188" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25250357" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25250357" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32863188" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Http/Controllers/GioithieuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="133" column="12" selection-start-line="133" selection-start-column="12" selection-end-line="139" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/theloai/update.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/slide/update.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Http/Controllers/TintucController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="9" column="22" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/thongtin/update.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Tintuc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend/css/core.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="405" column="1" selection-start-line="405" selection-start-column="1" selection-end-line="405" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/chitietsanpham.blade.php" />
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/404.blade.php" />
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/tintuc.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/chitiettintuc.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="941">
+          <caret line="141" column="26" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Http/Controllers/BietthuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="e#52#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/layouts/main-sidebad.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="166" column="23" lean-forward="true" selection-start-line="166" selection-start-column="23" selection-end-line="166" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend/css/uikit.modify.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="1637" column="19" selection-start-line="1637" selection-start-column="19" selection-end-line="1637" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend/css/library.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="121" column="23" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/listbietthu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend/css/jquery.fancybox.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend/js/jquery.fancybox.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Http/Controllers/HomepageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="63" column="39" lean-forward="true" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Providers/FrontendServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="100" column="51" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Http/Controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
+          <folding>
+            <element signature="e#53#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Http/Controllers/BietthuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/listvideo.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding>
+            <element signature="e#2503#2524#0#HTML" expanded="true" />
+            <element signature="e#2993#3012#0#HTML" expanded="true" />
+            <element signature="e#3148#3172#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="2985" column="27" lean-forward="true" selection-start-line="2985" selection-start-column="27" selection-end-line="2985" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Lienhe.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/lienhe/update.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/lienhe/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/lienhe/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Http/Controllers/LienheController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/lienhethanhcong.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/mail/user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/mail/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Notifications/ToAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/lienhe.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/update.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="234" selection-start-line="234" selection-end-line="234" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Backend/Resources/views/bietthu/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="217" column="12" selection-start-line="217" selection-start-column="12" selection-end-line="217" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Http/Controllers/FrontendController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#53#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/trangchu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="346" column="20" selection-start-line="346" selection-start-column="20" selection-end-line="346" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/bietthu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="30" column="117" selection-start-line="30" selection-start-column="117" selection-end-line="30" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Frontend/Resources/views/pages/minislide.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

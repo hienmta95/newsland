@@ -1,0 +1,96 @@
+
+/*HoangNH 17/05/2018*/
+.submit-with-icon {
+    background: transparent;
+    border: 0px;
+    padding: 0;
+    outline: 0;
+    color: #23527c;
+}
+
+/* Table css */
+.table-style {
+    width: 100% !important;
+}
+
+@media screen and (min-width: 1500px) {
+    .table-style th > input.form-control, .table-style th > select {
+        min-width: 100px;
+    }
+}
+
+.table-style thead tr th.orderable-col {
+    padding: 8px 16px 8px 8px;
+    color: #3c8dbc;
+}
+.table-style thead tr th.orderable-col:hover {
+    color: #72afd2;
+}
+.table-style thead tr th.un-orderable-col {
+    padding: 8px 16px 8px 8px;
+}
+.table-style tfoot tr th, .table-style tbody tr th {
+    padding: 8px;
+}
+.file-input .file-preview img {
+    width: 100% !important;
+}
+/* NAV TABS */
+.tab-pane-style.nav-tabs-custom > .nav-tabs > li:not(.active) > a{
+    color: #3c8dbc;
+}
+.tab-pane-style.nav-tabs-custom > .nav-tabs > li:not(.active) > a:hover,
+.tab-pane-style.nav-tabs-custom > .nav-tabs > li:not(.active) > a:focus,
+.tab-pane-style.nav-tabs-custom > .nav-tabs > li:not(.active) > a:active {
+    color: #72afd2;
+}
+.tab-pane-style.nav-tabs-custom > .nav-tabs > li > a.text-muted {
+    color: #777;
+}
+
+/* Spectrum css */
+
+.selectColorList {
+    display: flex;
+}
+.selectColorList input.form-group,
+.selectColorList .sp-replacer.sp-krajee {
+    display: inline-flex;
+}
+
+.table-style tbody td:empty:after {
+    content: '(not set)';
+    color: #c55;
+    font-style: italic;
+}
+
+table.dataTable thead th{
+    padding: 6px 5px !important;
+    min-width: 40px;
+}
+
+table.dataTable thead th input.form-control{
+    padding: 5px 5px;
+}
+
+table.table-style tbody td {
+    padding: 6px 5px !important;
+}
+
+.scroll-panel {
+    overflow-x: scroll;
+}
+.small-box > .inner {
+    color: #fff;
+    overflow-x: scroll;
+}
+
+table th {
+    min-width: 100px;
+}
+
+.required {
+    color: red;
+    font-size: 18px;
+    margin-left: 5px;
+}

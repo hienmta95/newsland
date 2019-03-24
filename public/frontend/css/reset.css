@@ -1,0 +1,181 @@
+ /* Font */
+@font-face {
+    font-family: 'UTMAvoBold';
+    src: url('../../fonts/UTMAvoBold/utm_avobold-webfont.woff2') format('woff2'),
+         url('../../fonts/UTMAvoBold/utm_avobold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset */
+html, body {
+    position: relative;
+    min-height: 100%;
+    background: #fff;
+}
+body {
+    overflow-x: hidden;
+    background: #fff;
+    font: 400 14px/20px 'Montserrat', Helvetica, Arial, sans-serif;
+    counter-reset: mega-step, mini-step;
+}
+@media (min-width: 1220px) {
+    .uk-container {
+        max-width: 1170px;
+        padding: 0;
+    }
+}
+@media (max-width: 1220px) {
+    .uk-container {padding: 0 10px}
+}
+@media (max-width: 1220px) {
+    .uk-container {padding: 0 8px}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ h6 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+*, :before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:before, :after {font-weight: normal;}
+ul, ol {margin: 0;padding: 0;}
+.uk-modal-close.uk-close {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    top: 0px;
+    right: 0px;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+    background: url(img/icon-close.png) 0px 0px no-repeat;
+    -webkit-background-size: 36px 36px;
+    -moz-background-size: 36px 36px;
+    background-size: 36px 36px;
+    z-index: 1020;
+    line-height: 30px;
+    opacity: 1!important;
+    box-shadow: none
+}
+
+.uk-modal-close.uk-close:after {display: none;}
+.uk-modal-close.uk-close:hover {opacity: 1;}
+form input[type=text]::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+    color: #333;
+    font-size: 13px;
+}
+form input[type=text]::-moz-placeholder,
+form textarea::-moz-placeholder {
+    color: #333;
+    font-size: 13px;
+}
+form input[type=text]:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+    color: #333;
+    font-size: 13px;
+}
+form input[type=text]:-moz-placeholder,
+form textarea:-moz-placeholder {
+    color: #333;
+    font-size: 13px;
+}
+form input[type=checkbox]:not(:disabled),
+form input[type=radio]:not(:disabled) {
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+label {cursor: pointer;}
+.slidenav-skin1 .uk-slidenav {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-style: solid;border-color: #fff;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+.slidenav-skin1 .uk-slidenav:before {content:''}
+.slidenav-skin1 .uk-slidenav-previous {border-width: 0px 0px 2px 2px;}
+.slidenav-skin1 .uk-slidenav-next {border-width: 2px 2px 0px 0px}
+.uk-modal-dialog-lightbox .uk-slidenav {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, .75);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    top: 50%;
+    z-index: 1;
+}
+.uk-modal-dialog-lightbox .uk-slidenav:before {display: none;}
+.uk-modal-dialog-lightbox .uk-slidenav-previous  {
+    left: 10px;
+    background-image: url(img/btn-prev.png);
+}
+.uk-modal-dialog-lightbox .uk-slidenav-next {
+    right: 10px;
+    background-image: url(img/btn-next.png);
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+.logo a {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.banner p {
+    margin: 0;
+    padding: 0;
+}
+.banner a {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#goTop {
+    position: fixed;
+    z-index: 9999;
+    right: 30px;
+    clip: rect(auto, auto, auto, auto);
+    text-indent: -9999px;
+    display: block;
+    width: 45px;height: 45px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: 45px;
+    background-size: 45px;
+    background-image: url(img/toTop.png);
+}
+@media (max-width: 1220px) {
+    #goTop {right: 5px;}
+}
+/* </reset.css> */
