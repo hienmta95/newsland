@@ -2138,7 +2138,7 @@
     top:initial;
     bottom:0;
     left:0;
-    background:#297bc3
+    background:#77b53c
 }
 .ft-contact .infor li{
     position:relative;
@@ -2235,7 +2235,7 @@
     top:0;
     left:initial;
     right:0;
-    background:#287eca url(img/icon_email_ft.png) center no-repeat;
+    background:#649a31 url(img/icon_email_ft.png) center no-repeat;
     border:none;
     cursor:pointer;
     text-indent:-99999px;
@@ -2325,7 +2325,7 @@
     }
     .footer .upper .ft-contact{
         padding:30px 20px;
-        background:rgba(40,126,202,.5)
+        background: rgba(100, 154, 48, 0.55)
     }
     .ft-subscribe .label{
         margin:0 0 15px
@@ -2479,7 +2479,7 @@
 		height: 50px;
 		bottom: 75px;
 		left: -200px;
-		background: rgba(96, 168, 204, 0.9);
+		background: rgba(119, 181, 60, 0.79);
 		font-size: 20px;
 		line-height: 50px;
 		text-align: center;
