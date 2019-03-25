@@ -6,7 +6,7 @@ Tạo mới biệt thự
 <ul class="breadcrumb">
     <li><a href="{{ route('backend.dashboard') }}">Home</a></li>
     <li><a href="{{ route('backend.bietthu.index') }}">Danh sách</a></li>
-    <li class="active">Tạo mới biệt thự  </li>
+    <li class="active">Tạo mới sản phẩm  </li>
 </ul>
 @endsection
 @section('content')
@@ -16,7 +16,7 @@ Tạo mới biệt thự
             @csrf
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['title']) ? 'has-error' : 'has-success'}} @endif" >
-                <label class="control-label">Tiêu đề biệt thự <span class="required">*</span></label>
+                <label class="control-label">Tiêu đề sản phẩm <span class="required">*</span></label>
                 <input type="text" class="form-control{{ $errors->has('title') ? ' has-error' : '' }}" name="title" value="{{ old('title') }}">
                 <div class="help-block">@if($errors->has('title')) {{ $errors->first('title') }} @endif</div>
             </div>

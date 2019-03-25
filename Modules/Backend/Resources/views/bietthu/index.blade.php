@@ -11,7 +11,7 @@ Quản lý biệt thự
 @section('content')
 <div class="sp-push-index">
     <p>
-        <a class="btn btn-success" href="{{ route('backend.bietthu.create') }}">Tạo mới biệt thự </a>
+        <a class="btn btn-success" href="{{ route('backend.bietthu.create') }}">Tạo mới sản phẩm </a>
     </p>
     <div class="grid-view" id="w0">
         <div class="summary">
