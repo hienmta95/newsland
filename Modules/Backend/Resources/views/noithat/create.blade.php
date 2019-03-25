@@ -22,7 +22,7 @@ Tạo mới nội thất
             </div>
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['slug']) ? 'has-error' : 'has-success'}} @endif" >
-                <label class="control-label">Tên hiển thị trên link <span class="required">*</span></label>
+                <label class="control-label">Tên hiển thị trên link </label>
                 <input type="text" class="form-control{{ $errors->has('slug') ? ' has-error' : '' }}" name="slug" value="{{ old('slug') }}" placeholder="news-land-slug">
                 <div class="help-block">@if($errors->has('slug')) {{ $errors->first('slug') }} @endif</div>
             </div>

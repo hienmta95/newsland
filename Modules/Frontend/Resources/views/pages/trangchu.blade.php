@@ -4,6 +4,10 @@
 
 @section('body_class', 'home')
 
+@section('stick')
+    data-uk-sticky=""
+@endsection
+
 @section('sliders')
     <section class="main-slide">
         <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'swipe', autoplay: true, autoplayInterval: 7500}">
@@ -30,44 +34,80 @@
 @section('content')
 
     @foreach($theloai as $category)
-    @if(count($category['bietthu']) > 0 )
+        @if($category['id'] == 4)
+            <section class="homepage-category">
+                <header class="panel-head">
+                    <h2 class="heading">
+                        <a href="{{ route('theloai', ['id' => $category['id'], 'slug' => $category['slug']]) }}" title="{{ $category['title'] }}">{{ $category['title'] }}</a>
+                    </h2>
+                </header>
+                <section class="panel-body">
+                    <ul class="uk-grid lib-grid-20 uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4 list-article" data-uk-grid-match="{target: '.article .title'}">
 
-    <section class="homepage-category">
-        <header class="panel-head">
-            <h2 class="heading">
-                <a href="{{ route('theloai', ['id' => $category['id'], 'slug' => $category['slug']]) }}" title="{{ $category['title'] }}">{{ $category['title'] }}</a>
-            </h2>
-        </header>
-        <section class="panel-body">
-            <ul class="uk-grid lib-grid-20 uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4 list-article" data-uk-grid-match="{target: '.article .title'}">
-
-                @foreach($category['bietthu'] as $item)
-                <li>
-                    <article class="uk-clearfix article">
-                        <div class="thumb img-zoomin">
-                            <a class="image img-cover" href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">
-                                <img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" />
-                            </a>
-                        </div>
-                        <div class="infor">
-                            <h3 class="title"><a href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">{{ $item['title'] }}</a></h3>
-                            <div class="price">
-                                <span class="label">Giá: </span>
-                                <span class="value">
+                        @foreach($daSuDung as $item)
+                            <li>
+                                <article class="uk-clearfix article">
+                                    <div class="thumb img-zoomin">
+                                        <a class="image img-cover" href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">
+                                            <img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" />
+                                        </a>
+                                    </div>
+                                    <div class="infor">
+                                        <h3 class="title"><a href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">{{ $item['title'] }}</a></h3>
+                                        <div class="price">
+                                            <span class="label">Giá: </span>
+                                            <span class="value">
                                     @if(!empty($item['gia'])) {{ $item['gia'] }} @else Liên hệ @endif
                                 </span>
-                            </div>
-                            <div class="description">{!! $item['mota'] !!}</div>
-                        </div>
-                    </article><!-- .article -->
-                </li>
-                @endforeach
+                                        </div>
+                                        <div class="description">{!! $item['mota'] !!}</div>
+                                    </div>
+                                </article><!-- .article -->
+                            </li>
+                        @endforeach
 
-            </ul>
-        </section>
-    </section>
+                    </ul>
+                </section>
+            </section>
+        @else
+            @if(count($category['bietthu']) > 0 )
+                <section class="homepage-category">
+                    <header class="panel-head">
+                        <h2 class="heading">
+                            <a href="{{ route('theloai', ['id' => $category['id'], 'slug' => $category['slug']]) }}" title="{{ $category['title'] }}">{{ $category['title'] }}</a>
+                        </h2>
+                    </header>
+                    <section class="panel-body">
+                        <ul class="uk-grid lib-grid-20 uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4 list-article" data-uk-grid-match="{target: '.article .title'}">
 
-    @endif
+                            @foreach($category['bietthu'] as $item)
+                                <li>
+                                    <article class="uk-clearfix article">
+                                        <div class="thumb img-zoomin">
+                                            <a class="image img-cover" href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">
+                                                <img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" />
+                                            </a>
+                                        </div>
+                                        <div class="infor">
+                                            <h3 class="title"><a href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">{{ $item['title'] }}</a></h3>
+                                            <div class="price">
+                                                <span class="label">Giá: </span>
+                                                <span class="value">
+                                    @if(!empty($item['gia'])) {{ $item['gia'] }} @else Liên hệ @endif
+                                </span>
+                                            </div>
+                                            <div class="description">{!! $item['mota'] !!}</div>
+                                        </div>
+                                    </article><!-- .article -->
+                                </li>
+                            @endforeach
+
+                        </ul>
+                    </section>
+                </section>
+            @endif
+        @endif
+
     @endforeach
 
     <div class="uk-grid lib-grid-20">

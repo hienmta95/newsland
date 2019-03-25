@@ -22,7 +22,6 @@ Quản lý video
                         <th class="un-orderable-col">#</th>
                         <th class="orderable-col">ID</th>
                         <th class="un-orderable-col">Tiêu đề video </th>
-                        <th class="un-orderable-col">Tên trên link</th>
                         <th class="un-orderable-col">Tóm tắt</th>
                         <th class="orderable-col">Ngày lập</th>
                         <th class="un-orderable-col">Hành động</th>
@@ -30,7 +29,6 @@ Quản lý video
                 </thead>
                 <tfoot>
                     <tr>
-                        <th></th>
                         <th></th>
                         <th></th>
                         <th></th>
@@ -68,7 +66,6 @@ Quản lý video
             {data: 'DT_RowIndex', orderable: false, searchable: false},
             {data: 'id', name: 'id'},
             {data: 'title', name: 'title', orderable: false},
-            {data: 'slug', name: 'slug', orderable: false},
             {data: 'tomtat', name: 'tomtat', orderable: false},
             {data: 'updated_at', name: 'updated_at'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
@@ -78,7 +75,7 @@ Quản lý video
             var r = $('#video-table tfoot tr');
             $('#video-table thead').append(r);
             this.api().columns().every(function (i) {
-                if (i != 0 && i != 7 && i != 6 && i != 1) {
+                if (i != 0 && i != 7 && i != 5 && i != 1) {
                     var column = this;
                     var table = $('#video-table').DataTable();
                     var input = document.createElement("input");

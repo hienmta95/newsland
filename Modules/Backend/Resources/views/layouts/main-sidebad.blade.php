@@ -22,6 +22,9 @@ if (! function_exists('active_route')) {
                 'backend.tintuc.index','backend.tintuc.show',
                 'backend.tintuc.create','backend.tintuc.edit',
 
+                'backend.video.index','backend.video.show',
+                'backend.video.create','backend.video.edit',
+
                 'backend.gioithieu.index','backend.gioithieu.show',
                 'backend.gioithieu.create','backend.gioithieu.edit',
 
@@ -117,6 +120,7 @@ if (! function_exists('active_route')) {
                 <li class="{{ active_route('backend.slide.*') }}"><a href="{{ route('backend.slide.index') }}">» Slide trang chủ</a></li>
                 <li class="{{ active_route('backend.minislide.*') }}"><a href="{{ route('backend.minislide.index') }}">» Mini slide</a></li>
                 <li class="{{ active_route('backend.tintuc.*') }}"><a href="{{ route('backend.tintuc.index') }}">» Tin tức </a></li>
+                <li class="{{ active_route('backend.video.*') }}"><a href="{{ route('backend.video.index') }}">» Videos </a></li>
                 <li class="{{ active_route('backend.noithat.*') }}"><a href="{{ route('backend.noithat.index') }}">» Bài viết về nội thất </a></li>
                 <li class="{{ active_route('backend.gioithieu.*') }}"><a href="{{ route('backend.noithat.index') }}">» Bài viết giới thiệu </a></li>
             </ul>

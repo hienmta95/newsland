@@ -23,7 +23,7 @@ Sửa: {{ $theloai->title ? $theloai->title : ''}}
             </div>
 
             <div class="form-group  @if (count($errors->all())) {{$errors->has(['slug']) ? 'has-error' : 'has-success'}} @endif">
-                <label class="control-label" for="role-name">Tên trên URL <span class="required">*</span></label>
+                <label class="control-label" for="role-name">Tên trên URL </label>
                 <input id="role-name" class="form-control{{ $errors->has('slug') ? ' has-error' : '' }}" name="slug" type="text" value="{{ $theloai->slug }}">
                 <div class="help-block">@if($errors->has('slug')) {{ $errors->first('slug') }} @endif</div>
             </div>
@@ -32,6 +32,15 @@ Sửa: {{ $theloai->title ? $theloai->title : ''}}
                 <label class="control-label" for="role-name">Số thứ tự hiển thị <span class="required">*</span></label>
                 <input id="role-name" class="form-control{{ $errors->has('order') ? ' has-error' : '' }}" name="order" type="text" value="{{ $theloai->order }}">
                 <div class="help-block">@if($errors->has('order')) {{ $errors->first('order') }} @endif</div>
+            </div>
+
+            <div class="form-group @if (count($errors->all())) {{$errors->has(['active']) ? 'has-error' : 'has-success'}} @endif">
+                <label class="control-label">Hiển thị hay không <span class="required">*</span></label>
+                <div>
+                    <label class="radio-inline"><input type="radio" name="active" value="1" required @if($theloai->active == 1) {{ "checked" }} @endif><strong>Có</strong></label>
+                    <label class="radio-inline"><input type="radio" name="active" value="0" required @if($theloai->active == 0) {{ "checked" }} @endif><strong>Không</strong></label>
+                </div>
+                <div class="help-block">@if($errors->has('active')) {{ $errors->first('active') }} @endif</div>
             </div>
 
             <br>

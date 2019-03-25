@@ -68,7 +68,6 @@ class tintucController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'noidung' => 'required',
             'tomtat' => 'required',
             'image' => 'required',
@@ -82,6 +81,7 @@ class tintucController extends Controller
         }
 
         $req = $request->all();
+        $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
         $tintuc = $image_id != 0 ? Tintuc::create(array_merge($req, ['image_id' => $image_id])) : Tintuc::create($req);
 
         return redirect()->route('backend.tintuc.show', $tintuc->id);
@@ -125,7 +125,6 @@ class tintucController extends Controller
         $id = $request->id;
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'noidung' => 'required',
             'tomtat' => 'required',
         ]);
@@ -140,7 +139,7 @@ class tintucController extends Controller
                 $image_id = $request->image_old;
             }
             $tintuc->title = $request->title;
-            $tintuc->slug = $request->slug;
+            $tintuc->slug = empty($request->slug) ? changeTitle($request->title) : $request->slug;
             $tintuc->noidung = $request->noidung;
             $tintuc->tomtat = $request->tomtat;
             $tintuc->image_id = $image_id;

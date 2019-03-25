@@ -23,12 +23,14 @@ Quản lý loại chung cư
                         <th class="un-orderable-col">Số thứ tự hiện thị</th>
                         <th class="un-orderable-col">Tiêu đề</th>
                         <th class="un-orderable-col">Tên trên URL</th>
+                        <th class="un-orderable-col">Hiển thị</th>
                         <th class="orderable-col">Ngày tạo</th>
                         <th class="un-orderable-col">Action</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
+                        <th></th>
                         <th></th>
                         <th></th>
                         <th></th>
@@ -69,6 +71,7 @@ Quản lý loại chung cư
             {data: 'order', name: 'order'},
             {data: 'title', name: 'title', orderable: false},
             {data: 'slug', name: 'slug', orderable: false},
+            {data: 'active', name: 'slug', orderable: false},
             {data: 'updated_at', name: 'updated_at'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ],
@@ -77,7 +80,7 @@ Quản lý loại chung cư
             var r = $('#theloai-table tfoot tr');
             $('#theloai-table thead').append(r);
             this.api().columns().every(function (i) {
-                if (i != 0 && i != 6 && i != 9  && i != 1) {
+                if (i != 0 && i != 7 && i != 9  && i != 1) {
                     var column = this;
                     var table = $('#theloai-table').DataTable();
                     var input = document.createElement("input");

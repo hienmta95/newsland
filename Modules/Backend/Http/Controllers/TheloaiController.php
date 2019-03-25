@@ -2,10 +2,12 @@
 
 namespace Modules\Backend\Http\Controllers;
 
+use App\Bietthu;
 use App\Theloai;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Modules\Backend\Components\ImageFile;
 use DataTables;
 
 class theloaiController extends Controller
@@ -23,6 +25,11 @@ class theloaiController extends Controller
     {
         $theloais = Theloai::select('theloais.*');
         return DataTables::of($theloais)
+            ->editColumn('active',function ($row){
+                if($row->active == 1)
+                    return "<p>Có hiển thị</p>";
+                return "<p>Không</p>";
+            })
             ->addColumn('action', function($row) {
                 return
                     '<form method="POST" action="'. route("backend.theloai.destroy", $row->id) .'" onsubmit="return confirm('."'Are you sure you want to delete this item?'".');">
@@ -35,7 +42,7 @@ class theloaiController extends Controller
                 </button>
             </form>';
             })
-            ->rawColumns(['action' => 'action'])
+            ->rawColumns(['action' => 'action', 'active' => 'active'])
             ->addIndexColumn()
             ->make(true);
     }
@@ -59,11 +66,13 @@ class theloaiController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'order' => 'required',
+            'active' => 'required',
         ]);
 
-        $theloai = Theloai::create($request->all());
+        $req = $request->all();
+        $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
+        $theloai = Theloai::create($req);
         return redirect()->route('backend.theloai.show', $theloai->id);
     }
 
@@ -103,14 +112,16 @@ class theloaiController extends Controller
         $id = $request->id;
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'order' => 'required',
+            'active' => 'required',
         ]);
 
         $theloai = Theloai::findOrFail($id);
 
         if($theloai) {
-            $theloai->update($request->all());
+            $req = $request->all();
+            $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
+            $theloai->update($req);
 
             return view('backend::theloai.show', compact(['theloai']));
         }
@@ -123,10 +134,18 @@ class theloaiController extends Controller
      */
     public function destroy(Request $request)
     {
-        $id = $request->id;
-        $theloai = Theloai::findOrFail($id);
-        $theloai->delete();
+        if($request->id != '4') {
+            $id = $request->id;
+            $theloai = Theloai::findOrFail($id);
+            $imageFile = new ImageFile();
 
+            $records = Bietthu::where('theloai_id', $id)->get();
+            foreach ($records as $record) {
+                $image_delete = $imageFile->deleteImage($record->image_id);
+                $record->delete();
+            }
+            $theloai->delete();
+        }
         return redirect()->route('backend.theloai.index');
     }
 

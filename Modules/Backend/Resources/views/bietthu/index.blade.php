@@ -1,6 +1,6 @@
 @extends('backend::layouts.main')
 @section('page_title')
-Quản lý bất động sản
+    Quản lý bất động sản
 @endsection
 @section('breadcrumb')
 <ul class="breadcrumb">

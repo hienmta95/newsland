@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use App\Slide;
-use App\Noithat;
+use App\Bietthu;
 
 class HomepageController extends Controller
 {
@@ -28,11 +28,19 @@ class HomepageController extends Controller
             ->toArray();
 
         $theloai = Theloai::with(['bietthu' => function($q) {
-            $q->with(['image'])
-            ->limit(8)
-            ->orderBy('updated_at', 'desc');
-        }])
+                $q->with(['image'])
+                ->limit(8)
+                ->orderBy('updated_at', 'desc');
+            }])
+            ->where('active', '1')
             ->orderBy('order', 'asc')
+            ->get()
+            ->toArray();
+
+        $daSuDung = Bietthu::with(['image'])
+            ->where('trangthai', '2')
+            ->orderBy('updated_at', 'desc')
+            ->limit(8)
             ->get()
             ->toArray();
 
@@ -41,7 +49,7 @@ class HomepageController extends Controller
             ->get()
             ->toArray();
 
-        return view('frontend::pages.trangchu', compact(['slide', 'theloai', 'tintuc', 'video']));
+        return view('frontend::pages.trangchu', compact(['slide', 'theloai', 'tintuc', 'video', 'daSuDung']));
     }
 
 }

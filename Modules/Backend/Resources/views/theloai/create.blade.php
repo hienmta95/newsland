@@ -21,7 +21,7 @@ Tạo mới loại chung cư
             </div>
 
             <div class="form-group  @if (count($errors->all())) {{$errors->has(['slug']) ? 'has-error' : 'has-success'}} @endif">
-                <label class="control-label" for="role-name">Tên trên URL <span class="required">*</span></label>
+                <label class="control-label" for="role-name">Tên trên URL </label>
                 <input id="role-name" class="form-control{{ $errors->has('slug') ? ' has-error' : '' }}" name="slug" type="text" value="{{ old('slug') }}">
                 <div class="help-block">@if($errors->has('slug')) {{ $errors->first('slug') }} @endif</div>
             </div>
@@ -30,6 +30,15 @@ Tạo mới loại chung cư
                 <label class="control-label" for="role-name">Số thứ tự hiển thị <span class="required">*</span></label>
                 <input id="role-name" class="form-control{{ $errors->has('order') ? ' has-error' : '' }}" name="order" type="number" value="{{ old('oder') }}">
                 <div class="help-block">@if($errors->has('order')) {{ $errors->first('order') }} @endif</div>
+            </div>
+
+            <div class="form-group @if (count($errors->all())) {{$errors->has(['active']) ? 'has-error' : 'has-success'}} @endif">
+                <label class="control-label">Hiển thị hay không <span class="required">*</span></label>
+                <div>
+                    <label class="radio-inline"><input type="radio" name="active" value="1" @if(old('active') == 1) {!! 'checked'!!} @endif ><strong>Có</strong></label>
+                    <label class="radio-inline"><input type="radio" name="active" value="0" @if(old('active') == 0) {!! 'checked'!!} @endif ><strong>Không</strong></label>
+                </div>
+                <div class="help-block">@if($errors->has('active')) {{ $errors->first('active') }} @endif</div>
             </div>
 
             <br>

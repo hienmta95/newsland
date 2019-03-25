@@ -63,11 +63,12 @@ class thanhphoController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'tenmien' => 'required',
         ]);
 
-        $thanhpho = Thanhpho::create($request->all());
+        $req = $request->all();
+        $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
+        $thanhpho = Thanhpho::create($req);
         return redirect()->route('backend.thanhpho.show', $thanhpho->id);
     }
 
@@ -107,14 +108,15 @@ class thanhphoController extends Controller
         $id = $request->id;
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'tenmien' => 'required',
         ]);
 
         $thanhpho = Thanhpho::findOrFail($id);
 
         if($thanhpho) {
-            $thanhpho->update($request->all());
+            $req = $request->all();
+            $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
+            $thanhpho->update($req);
 
             return view('backend::thanhpho.show', compact(['thanhpho']));
         }
@@ -129,12 +131,18 @@ class thanhphoController extends Controller
     {
         $id = $request->id;
         $thanhpho = Thanhpho::findOrFail($id);
-        $thanhpho->delete();
+        $imageFile = new ImageFile();
 
         $quans = Quan::where('thanhpho_id', $id)->get();
         foreach($quans as $item) {
+            $records = Bietthu::where('quan_id', $item->id)->get();
+            foreach ($records as $record) {
+                $image_delete = $imageFile->deleteImage($record->image_id);
+                $record->delete();
+            }
             $item->delete();
         }
+        $thanhpho->delete();
 
         return redirect()->route('backend.thanhpho.index');
     }

@@ -67,7 +67,6 @@ class GioithieuController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'noidung' => 'required',
             'tomtat' => 'required',
             'image' => 'required',
@@ -81,6 +80,7 @@ class GioithieuController extends Controller
         }
 
         $req = $request->all();
+        $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
         $gioithieu = $image_id != 0 ? Gioithieu::create(array_merge($req, ['image_id' => $image_id])) : Gioithieu::create($req);
 
         return redirect()->route('backend.gioithieu.show', $gioithieu->id);
@@ -124,7 +124,6 @@ class GioithieuController extends Controller
         $id = $request->id;
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'noidung' => 'required',
             'tomtat' => 'required',
         ]);
@@ -139,7 +138,7 @@ class GioithieuController extends Controller
                 $image_id = $request->image_old;
             }
             $gioithieu->title = $request->title;
-            $gioithieu->slug = $request->slug;
+            $gioithieu->slug = empty($request->slug) ? changeTitle($request->title) : $request->slug;
             $gioithieu->noidung = $request->noidung;
             $gioithieu->tomtat = $request->tomtat;
             $gioithieu->image_id = $image_id;

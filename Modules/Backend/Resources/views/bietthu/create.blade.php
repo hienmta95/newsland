@@ -22,7 +22,7 @@ Tạo mới bất động sản
             </div>
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['slug']) ? 'has-error' : 'has-success'}} @endif" >
-                <label class="control-label">Tên hiển thị trên link <span class="required">*</span></label>
+                <label class="control-label">Tên hiển thị trên link </label>
                 <input type="text" class="form-control{{ $errors->has('slug') ? ' has-error' : '' }}" name="slug" value="{{ old('slug') }}" placeholder="news-land-slug">
                 <div class="help-block">@if($errors->has('slug')) {{ $errors->first('slug') }} @endif</div>
             </div>
@@ -211,13 +211,13 @@ Tạo mới bất động sản
             </div>
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['image']) ? 'has-error' : 'has-success'}} @endif">
-                <label class="control-label">Hình ảnh thumbnail <span class="required">*</span></label>
+                <label class="control-label">Hình ảnh thumbnail (1 ảnh) <span class="required">*</span></label>
                 <input id="input-b1" name="image" type="file" class="file" accept=".jpg,.gif,.png,.jpeg">
                 <div class="help-block">@if($errors->has('image')) {{ $errors->first('image') }} @endif</div>
             </div>
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['images']) ? 'has-error' : 'has-success'}} @endif">
-                <label class="control-label">Hình ảnh dự án <span class="required">*</span></label>
+                <label class="control-label">Hình ảnh dự án (1 hoặc nhiều ảnh) <span class="required">*</span></label>
                 <input id="input-24" name="images[]" type="file" multiple>
                 <div class="help-block">@if($errors->has('images')) {{ $errors->first('images') }} @endif</div>
             </div>

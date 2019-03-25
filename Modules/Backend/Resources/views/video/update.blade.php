@@ -23,43 +23,10 @@
                 <div class="help-block">@if($errors->has('title')) {{ $errors->first('title') }} @endif</div>
             </div>
 
-            <div class="form-group @if (count($errors->all())) {{$errors->has(['slug']) ? 'has-error' : 'has-success'}} @endif" >
-                <label class="control-label">Tên hiển thị trên link<span class="required">*</span></label>
-                <input type="text" class="form-control{{ $errors->has('slug') ? ' has-error' : '' }}" name="slug" value="{{ $video->slug }}">
-                <div class="help-block">@if($errors->has('slug')) {{ $errors->first('slug') }} @endif</div>
-            </div>
-
             <div class="form-group @if (count($errors->all())) {{$errors->has(['video']) ? 'has-error' : 'has-success'}} @endif" >
                 <label class="control-label">Video URL <span class="required">*</span></label>
                 <input type="text" class="form-control{{ $errors->has('video') ? ' has-error' : '' }}" name="video" value="{{ $video->video }}">
                 <div class="help-block">@if($errors->has('video')) {{ $errors->first('video') }} @endif</div>
-            </div>
-
-            <div class="form-group @if (count($errors->all())) {{$errors->has(['image']) ? 'has-error' : 'has-success'}} @endif">
-                <div>
-                    <img class="show-images"  class="img-thumbnail" src="{!! $video->image ? asset('/').$video->image->url : ""!!}" alt="web_image" title="image">
-                </div>
-                <label class="control-label">Hình ảnh </label>
-                <input type="hidden" name="image_old" value="{{ $video->image_id  }}">
-                <input id="input-b1" name="image" type="file" class="file" accept=".jpg,.gif,.png,.jpeg">
-                <div class="help-block">@if($errors->has('image')) {{ $errors->first('image') }} @endif</div>
-            </div>
-
-            <div class="form-group @if (count($errors->all())) {{$errors->has(['noidung']) ? 'has-error' : 'has-success'}} @endif">
-                <label class="control-label">Nội dung<span class="required">*</span></label>
-                <textarea id="noidung_video" class="form-control{{ $errors->has('noidung') ? ' has-error' : '' }}" name="noidung" maxlength="255" rows="3">{{ $video->noidung }}</textarea>
-                <script type="text/javascript">
-                    var editor = CKEDITOR.replace('noidung_video',{
-                        language:'vi',
-                        filebrowserBrowseUrl :'/js/ckfinder/ckfinder.html',
-                        filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?type=Images',
-                        filebrowserFlashBrowseUrl : '/js/ckfinder/ckfinder.html?type=Flash',
-                        filebrowserUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                        filebrowserImageUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-                        filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
-                    });
-                </script>
-                <div class="help-block">@if($errors->has('noidung')) {{ $errors->first('noidung') }} @endif</div>
             </div>
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['tomtat']) ? 'has-error' : 'has-success'}} @endif">

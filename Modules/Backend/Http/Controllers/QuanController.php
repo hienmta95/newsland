@@ -7,6 +7,7 @@ use App\Thanhpho;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Modules\Backend\Components\ImageFile;
 use DataTables;
 
 class quanController extends Controller
@@ -64,11 +65,12 @@ class quanController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'thanhpho_id' => 'required',
         ]);
 
-        $quan = Quan::create($request->all());
+        $req = $request->all();
+        $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
+        $quan = Quan::create();
         return redirect()->route('backend.quan.show', $quan->id);
     }
 
@@ -109,14 +111,15 @@ class quanController extends Controller
         $id = $request->id;
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'thanhpho_id' => 'required',
         ]);
 
         $quan = Quan::findOrFail($id);
 
         if($quan) {
-            $quan->update($request->all());
+            $req = $request->all();
+            $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
+            $quan->update($req);
 
             return view('backend::quan.show', compact(['quan']));
         }
@@ -131,6 +134,13 @@ class quanController extends Controller
     {
         $id = $request->id;
         $quan = Quan::findOrFail($id);
+
+        $imageFile = new ImageFile();
+        $records = Bietthu::where('quan_id', $id)->get();
+        foreach ($records as $record) {
+            $image_delete = $imageFile->deleteImage($record->image_id);
+            $record->delete();
+        }
         $quan->delete();
 
         return redirect()->route('backend.quan.index');

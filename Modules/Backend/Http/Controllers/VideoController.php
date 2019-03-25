@@ -63,21 +63,12 @@ class VideoController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
-            'noidung' => 'required',
             'tomtat' => 'required',
             'video' => 'required',
         ]);
 
-        $image_id = 0;
-        if ($request->hasFile('image')) {
-            $file = $request->image;
-            $imageFile = new ImageFile();
-            $image_id = $imageFile->saveImage($file);
-        }
-
         $req = $request->all();
-        $video = $image_id != 0 ? Video::create(array_merge($req, ['image_id' => $image_id])) : Video::create($req);
+        $video = Video::create($req);
 
         return redirect()->route('backend.video.show', $video->id);
     }
@@ -120,26 +111,14 @@ class VideoController extends Controller
         $id = $request->id;
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
-            'noidung' => 'required',
             'tomtat' => 'required',
             'video' => 'required',
         ]);
         $video = Video::find($id);
 
         if($video) {
-            if ($request->hasFile('image')) {
-                $file = $request->image;
-                $imageFile = new ImageFile();
-                $image_id = $imageFile->updateImage($file, $video->image_id);
-            } else {
-                $image_id = $request->image_old;
-            }
             $video->title = $request->title;
-            $video->slug = $request->slug;
-            $video->noidung = $request->noidung;
             $video->tomtat = $request->tomtat;
-            $video->image_id = $image_id;
             $video->video = $request->video;
             $video->save();
 

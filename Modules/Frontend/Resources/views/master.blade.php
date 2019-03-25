@@ -60,7 +60,7 @@
 
 <!-- PC HEADER -->
 <header class="pc-header uk-visible-large">
-    <section class="upper" data-uk-sticky="">
+    <section class="upper" @yield('stick')>
         <div class="uk-container uk-container-center">
             <div class="uk-flex uk-flex-middle uk-flex-space-between">
                 <!-- Các trang về tour dung logo-1.png -->
@@ -169,7 +169,7 @@
             <span>Menu</span>
         </a>
         <div class="logo"><a href="{{ route('homepage') }}" title=""><img src="{{ asset('/images/newsland.jpg') }}" alt="" /></a></div>
-        <a id="open-featured" href="/tin-tuc.html" title="Dự án bất động sản mới nhất"><img src="{{ asset('/images/news-copy.png') }}" alt=""></a>
+        <a id="open-featured" href="#" title="Dự án bất động sản mới nhất"><img src="{{ asset('/images/news-copy.png') }}" alt=""></a>
     </section><!-- .upper -->
 
     <section class="lower">
@@ -226,7 +226,7 @@
                             <ul class="uk-list site-link">
 
                                 @foreach($noithat as $item)
-                                <li><a href="#" title="{{ $item['title'] }}">{{ $item['title'] }}</a></li>
+                                <li><a href="{{ route('noithat', ['id'=>$item['id'], 'slug'=>$item['slug']]) }}" title="{{ $item['title'] }}">{{ $item['title'] }}</a></li>
                                 @endforeach
 
                             </ul>
@@ -415,9 +415,9 @@
                 @foreach($noibatMobile['bietthu'] as $item)
                 <li>
                     <article class="uk-clearfix article">
-                        <div class="thumb"><a class="image img-cover" href="#" title="{{ $item['title'] }}"><img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
+                        <div class="thumb"><a class="image img-cover" href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
                         <div class="infor">
-                            <h3 class="title"><a href="#" title="{{ $item['title'] }}">{{ $item['title'] }}</a></h3>
+                            <h3 class="title"><a href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">{{ $item['title'] }}</a></h3>
                             <div class="price">
                                 <span class="label">Giá: </span>
                                 <span class="value">

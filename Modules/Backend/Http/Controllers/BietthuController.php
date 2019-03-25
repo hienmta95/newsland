@@ -65,7 +65,7 @@ class bietthuController extends Controller
     public function create()
     {
         $quan = Quan::all();
-        $theloai = Theloai::all();
+        $theloai = Theloai::where('id', '!=','4')->get();
         return view('backend::bietthu.create', compact(['quan', 'theloai']));
     }
 
@@ -78,7 +78,6 @@ class bietthuController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'image' => 'required',
             'trangthai' => 'required',
             'mota' => 'required',
@@ -95,7 +94,8 @@ class bietthuController extends Controller
         }
 
         $req = $request->all();
-        $bietthu = $image_id != 0 ? bietthu::create(array_merge($req, ['image_id' => $image_id])) : bietthu::create($req);
+        $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
+        $bietthu = $image_id != 0 ? Bietthu::create(array_merge($req, ['image_id' => $image_id])) : Bietthu::create($req);
 
         if($request->images) {
             $arrImage = [];
@@ -136,7 +136,7 @@ class bietthuController extends Controller
     {
         $id = $request->id;
         $quan = Quan::all();
-        $theloai = Theloai::all();
+        $theloai = Theloai::where('id', '!=','4')->get();
         $bietthu = Bietthu::with(['image', 'quan', 'theloai', 'images'])->find($id);
         if($bietthu)
             return view('backend::bietthu.update', compact(['bietthu', 'quan', 'theloai']));
@@ -153,7 +153,6 @@ class bietthuController extends Controller
         $id = $request->id;
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'trangthai' => 'required',
             'theloai_id' => 'required',
             'mota' => 'required',
@@ -171,6 +170,8 @@ class bietthuController extends Controller
             }
 
             $filter = array_merge($request->all(), ['image_id' => $image_id]);
+            $filter['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
+
             $bietthu->update($filter);
 
             if($request->images) {

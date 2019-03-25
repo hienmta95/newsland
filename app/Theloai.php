@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Theloai extends Model
 {
     protected $fillable = [
-        'id', 'title', 'created_at', 'updated_at', 'order', 'slug'
+        'id', 'title', 'created_at', 'updated_at', 'order', 'slug', 'active'
     ];
 
 

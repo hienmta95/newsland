@@ -67,7 +67,6 @@ class NoithatController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'noidung' => 'required',
             'tomtat' => 'required',
             'image' => 'required',
@@ -81,6 +80,7 @@ class NoithatController extends Controller
         }
 
         $req = $request->all();
+        $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
         $noithat = $image_id != 0 ? Noithat::create(array_merge($req, ['image_id' => $image_id])) : Noithat::create($req);
 
         return redirect()->route('backend.noithat.show', $noithat->id);
@@ -124,7 +124,6 @@ class NoithatController extends Controller
         $id = $request->id;
         $request->validate([
             'title' => 'required',
-            'slug' => 'required',
             'noidung' => 'required',
             'tomtat' => 'required',
         ]);
@@ -139,7 +138,7 @@ class NoithatController extends Controller
                 $image_id = $request->image_old;
             }
             $noithat->title = $request->title;
-            $noithat->slug = $request->slug;
+            $noithat->slug = empty($request->slug) ? changeTitle($request->title) : $request->slug;
             $noithat->noidung = $request->noidung;
             $noithat->tomtat = $request->tomtat;
             $noithat->image_id = $image_id;

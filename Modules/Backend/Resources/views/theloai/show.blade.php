@@ -23,6 +23,7 @@ Chi tiết: {{ $theloai->title ? $theloai->title : "" }}
             <tr><th>Tiêu đề</th><td>{!! $theloai->title ? $theloai->title : "<span class='not-set'>(not set)</span>"  !!}</td></tr>
             <tr><th>Tên trên url</th><td>{!! $theloai->slug ? $theloai->slug : "<span class='not-set'>(not set)</span>"  !!}</td></tr>
             <tr><th>Số thứ tự hiển thị </th><td>{!! $theloai->order !!}</td></tr>
+            <tr><th>Status</th><td>{{ $theloai->active == 0 ? "Không hiển thị" : "Có hiển thị" }}</td></tr>
             <tr><th>Created At</th><td><p class="c_timezone">{{ $theloai->created_at }}</p></td></tr>
             <tr><th>Updated At</th><td><p class="c_timezone">{{ $theloai->updated_at }}</p></td></tr>
         </tbody>

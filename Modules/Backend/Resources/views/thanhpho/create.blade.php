@@ -22,7 +22,7 @@ Tạo mới tỉnh / thành phố
             </div>
 
             <div class="form-group  @if (count($errors->all())) {{$errors->has(['slug']) ? 'has-error' : 'has-success'}} @endif">
-                <label class="control-label" for="role-name">Tên trên URL <span class="required">*</span></label>
+                <label class="control-label" for="role-name">Tên trên URL </label>
                 <input id="role-name" class="form-control{{ $errors->has('slug') ? ' has-error' : '' }}" name="slug" type="text" value="{{ old('slug') }}">
                 <div class="help-block">@if($errors->has('slug')) {{ $errors->first('slug') }} @endif</div>
             </div>
