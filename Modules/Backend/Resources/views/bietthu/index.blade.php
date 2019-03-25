@@ -1,17 +1,17 @@
 @extends('backend::layouts.main')
 @section('page_title')
-Quản lý biệt thự
+Quản lý bất động sản
 @endsection
 @section('breadcrumb')
 <ul class="breadcrumb">
     <li><a href="{{ route('backend.dashboard') }}">Home</a></li>
-    <li class="active">Quản lý biệt thự </li>
+    <li class="active">Quản lý bất động sản </li>
 </ul>
 @endsection
 @section('content')
 <div class="sp-push-index">
     <p>
-        <a class="btn btn-success" href="{{ route('backend.bietthu.create') }}">Tạo mới sản phẩm </a>
+        <a class="btn btn-success" href="{{ route('backend.bietthu.create') }}">Tạo mới bất động sản </a>
     </p>
     <div class="grid-view" id="w0">
         <div class="summary">

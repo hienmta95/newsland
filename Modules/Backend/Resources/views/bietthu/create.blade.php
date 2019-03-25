@@ -1,6 +1,6 @@
 @extends('backend::layouts.main')
 @section('page_title')
-Tạo mới biệt thự
+Tạo mới bất động sản
 @endsection
 @section('breadcrumb')
 <ul class="breadcrumb">
@@ -16,7 +16,7 @@ Tạo mới biệt thự
             @csrf
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['title']) ? 'has-error' : 'has-success'}} @endif" >
-                <label class="control-label">Tiêu đề sản phẩm <span class="required">*</span></label>
+                <label class="control-label">Tiêu đề bất động sản <span class="required">*</span></label>
                 <input type="text" class="form-control{{ $errors->has('title') ? ' has-error' : '' }}" name="title" value="{{ old('title') }}">
                 <div class="help-block">@if($errors->has('title')) {{ $errors->first('title') }} @endif</div>
             </div>
