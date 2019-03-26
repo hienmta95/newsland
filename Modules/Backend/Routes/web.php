@@ -2,7 +2,7 @@
 
 Route::group(['prefix' => 'admin'], function() {
 
-    config(['session.cookie' => 'dreamhouse_admin_cookie']);
+    config(['session.cookie' => 'newsland_admin_cookie']);
 
     Route::get('/login', 'BackendLoginController@showLoginForm')->name('backend.login');
     Route::post('/login', 'BackendLoginController@login')->name('backend.login.submit');

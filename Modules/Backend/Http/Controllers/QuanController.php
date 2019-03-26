@@ -70,7 +70,7 @@ class quanController extends Controller
 
         $req = $request->all();
         $req['slug'] = empty($request->slug) ? changeTitle($request->title) : $request->slug;
-        $quan = Quan::create();
+        $quan = Quan::create($req);
         return redirect()->route('backend.quan.show', $quan->id);
     }
 
@@ -81,7 +81,7 @@ class quanController extends Controller
     public function show(Request $request)
     {
         $id = $request->id;
-        $quan = quan::findOrFail($id);
+        $quan = Quan::findOrFail($id);
         if($quan)
             return view('backend::quan.show', compact(['quan']));
         return redirect()->route('backend.quan.index');

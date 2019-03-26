@@ -11,8 +11,11 @@ class ImageFile {
         $nameonly = preg_replace('/\..+$/', '', $file->getClientOriginalName());
         $fullname = $nameonly.'-'.time().'.'.$file->getClientOriginalExtension();
         $location = public_path('backend/upload/images/'.$fullname);
-        $createFile = \Image::make($file);
-        $resize_save = $createFile->save($location);
+
+//        $createFile = \Image::make($file);
+//        $resize_save = $createFile->save($location);
+
+        $file->move("backend/upload/images/", $location);
 
         $img = new Image();
         $img->url = 'backend/upload/images/'. $fullname;
@@ -44,8 +47,11 @@ class ImageFile {
         $nameonly = preg_replace('/\..+$/', '', $file->getClientOriginalName());
         $fullname = $nameonly.'-'.time().'.'.$file->getClientOriginalExtension();
         $location = public_path('backend/upload/images/'.$fullname);
-        $createFile = \Image::make($file);
-        $resize_save = $createFile->save($location);
+
+//        $createFile = \Image::make($file);
+//        $resize_save = $createFile->save($location);
+
+        $file->move("backend/upload/images/", $location);
 
         $img = Image::find($image_id);
         if($img) {
