@@ -5,7 +5,7 @@
 
             @foreach($minislide as $item)
                 <li class="item">
-                    <a class="image img-cover" href="#" title="{{ asset('/'). $item['image']['url'] }}"><img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ asset('/'). $item['image']['url'] }}" /></a>
+                    <a class="image img-cover" href="#" title="{{ cxl_asset('/'). $item['image']['url'] }}"><img src="{{ cxl_asset('/'). $item['image']['url'] }}" alt="{{ cxl_asset('/'). $item['image']['url'] }}" /></a>
                 </li>
             @endforeach
         </ul>

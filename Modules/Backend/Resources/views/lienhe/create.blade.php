@@ -53,7 +53,7 @@ Tạo mới page
 
 @push('scripts')
 
-    <script src="{!! asset('/backend/bower_components/ckeditor/ckeditor.js') !!}"></script>
+    <script src="{!! cxl_asset('/backend/bower_components/ckeditor/ckeditor.js') !!}"></script>
     <script> CKEDITOR.replace('content_page'); </script>
 
 @endpush

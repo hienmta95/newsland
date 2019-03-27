@@ -99,7 +99,7 @@ if (! function_exists('active_route')) {
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="{{asset("/images/spicemart-icon.png")}}" class="img-circle" alt="User Image">
+                <img src="{{cxl_asset("/images/spicemart-icon.png")}}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p>Hello, {{ Auth::guard('web')->user()->username }}</p>

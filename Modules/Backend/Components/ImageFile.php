@@ -10,13 +10,13 @@ class ImageFile {
     {
         $nameonly = preg_replace('/\..+$/', '', $file->getClientOriginalName());
         $fullname = $nameonly.'-'.time().'.'.$file->getClientOriginalExtension();
-        $location = public_path('backend/upload/images/'.$fullname);
+        $location = public_path('public/backend/upload/images/'.$fullname);
         // $createFile = \Image::make($file);
         // $resize_save = $createFile->save($location);
-		$file->move("backend/upload/images/", $location);
-		
+		$file->move("public/backend/upload/images/", $location);
+
         $img = new Image();
-        $img->url = 'backend/upload/images/'. $fullname;
+        $img->url = '/backend/upload/images/'. $fullname;
         $img->name = $fullname;
         $img->save();
 
@@ -27,7 +27,7 @@ class ImageFile {
     {
         $image_delete = Image::find($image_id);
         if($image_delete) {
-            $file_path = public_path('backend/upload/images/'.$image_delete->name);
+            $file_path = public_path('public/backend/upload/images/'.$image_delete->name);
             // unlink($file_path);
             return $image_delete->delete();
         }
@@ -38,21 +38,21 @@ class ImageFile {
     {
         $image_delete = Image::find($image_id);
         if($image_delete) {
-            $file_path = public_path('backend/upload/images/'.$image_delete->name);
+            $file_path = public_path('public/backend/upload/images/'.$image_delete->name);
             // unlink($file_path);
         }
 
         $nameonly = preg_replace('/\..+$/', '', $file->getClientOriginalName());
         $fullname = $nameonly.'-'.time().'.'.$file->getClientOriginalExtension();
-        $location = public_path('backend/upload/images/'.$fullname);
+        $location = public_path('public/backend/upload/images/'.$fullname);
         // $createFile = \Image::make($file);
         // $resize_save = $createFile->save($location);
 
-		$file->move("backend/upload/images/", $location);
-		
+		$file->move("public/backend/upload/images/", $location);
+
         $img = Image::find($image_id);
         if($img) {
-            $img->url = 'backend/upload/images/'. $fullname;
+            $img->url = '/backend/upload/images/'. $fullname;
             $img->name = $fullname;
             $img->save();
 

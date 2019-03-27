@@ -3,8 +3,8 @@ require('laravel-mix-merge-manifest');
 
 mix.setPublicPath('../../public').mergeManifest();
 
-mix.js(__dirname + '/Resources/assets/js/app.js', 'js/backend.js')
-    .sass( __dirname + '/Resources/assets/sass/app.scss', 'css/backend.css');
+mix.js(__dirname + '/Resources/cxl_assets/js/app.js', 'js/backend.js')
+    .sass( __dirname + '/Resources/cxl_assets/sass/app.scss', 'css/backend.css');
 
 if (mix.inProduction()) {
     mix.version();

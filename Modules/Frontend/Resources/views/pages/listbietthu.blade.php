@@ -33,7 +33,7 @@
                         @foreach($items as $item)
                         <li>
                             <article class="uk-clearfix article">
-                                <div class="thumb"><a class="image img-cover" href="{{ route('bietthu', ['id'=>$item['id'], 'slug'=>$item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
+                                <div class="thumb"><a class="image img-cover" href="{{ route('bietthu', ['id'=>$item['id'], 'slug'=>$item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ cxl_asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
                                 <div class="infor">
                                     <h3 class="title"><a href="{{ route('bietthu', ['id'=>$item['id'], 'slug'=>$item['slug']]) }}" title="{{ $item['title'] }}">{{ $item['title'] }}</a></h3>
                                     <div class="price">

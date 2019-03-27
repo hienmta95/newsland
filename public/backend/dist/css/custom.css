@@ -94,3 +94,7 @@ table th {
     font-size: 18px;
     margin-left: 5px;
 }
+
+.min-width-200 {
+    min-width: 200px;
+}

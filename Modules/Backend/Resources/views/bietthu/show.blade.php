@@ -19,6 +19,9 @@
 
     <table id="w0" class="table table-striped table-bordered detail-view">
         <tbody>
+
+            <tr><th>Edit Nội dung</th><td><a href="{{ route('backend.bietthu.noidung.get', ['id' => $bietthu->id]) }}" class="btn btn-success min-width-200" target="_blank">Edit</a></td></tr>
+
             <tr><th>ID</th><td>{{ $bietthu->id }}</td></tr>
             <tr><th>Tiêu đề</th><td>{{ $bietthu->title }}</td></tr>
             <tr><th>Slug</th><td>{!! $bietthu->slug ? $bietthu->slug : "<span class='not-set'>(not set)</span>"  !!}</td></tr>
@@ -39,12 +42,12 @@
             <tr><th>Trạng thái</th><td>{{ $bietthu->trangthai == '2' ? 'Đã qua sử dụng' : ($bietthu->trangthai == '1' ? 'Chưa qua sử dụng' : ' - ' ) }}</td></tr>
             <tr><th>Ngày tạo</th><td><p class="c_timezone">{{ $bietthu->created_at }}</p></td></tr>
             <tr><th>Ngày sửa</th><td><p class="c_timezone">{{ $bietthu->updated_at }}</p></td></tr>
-            <tr><th>Hình ảnh thumbnail </th><td>{!! $bietthu->image ? "<img  class='show-images' src='".asset('/'). $bietthu->image->url ."' alt=''>" : "<span class='not-set'>(not set)</span>"!!}</td></tr>
+            <tr><th>Hình ảnh thumbnail </th><td>{!! $bietthu->image ? "<img  class='show-images' src='".cxl_asset('/'). $bietthu->image->url ."' alt=''>" : "<span class='not-set'>(not set)</span>"!!}</td></tr>
 
             <tr><th>Hình ảnh dự án</th>
                 <td>
                     @foreach($bietthu->images as $img)
-                        <span class="image-list"><img src="{{ asset('/').$img->url }}" /></span>
+                        <span class="image-list"><img src="{{ cxl_asset('/').$img->url }}" /></span>
                     @endforeach
                 </td>
             </tr>

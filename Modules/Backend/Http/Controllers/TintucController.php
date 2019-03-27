@@ -27,7 +27,7 @@ class tintucController extends Controller
         return DataTables::of($tintucs)
             ->addColumn('image',function ($row){
                 $url = $row->image ? $row->image->url : "";
-                return "<img class='index-images' src='".asset('/') .$url."' alt=''>";
+                return "<img class='index-images' src='".cxl_asset('/') .$url."' alt=''>";
             })
             ->editColumn('tomtat',function ($row){
                 return "<p>". mb_convert_encoding(substr($row->tomtat, 0, 100), 'UTF-8', 'UTF-8')."</p>";

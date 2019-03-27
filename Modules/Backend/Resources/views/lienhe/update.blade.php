@@ -54,7 +54,7 @@
 
 @push('scripts')
 
-    <script src="{!! asset('/backend/bower_components/ckeditor/ckeditor.js') !!}"></script>
+    <script src="{!! cxl_asset('/backend/bower_components/ckeditor/ckeditor.js') !!}"></script>
     <script> CKEDITOR.replace('content_lienhe'); </script>
 
 @endpush

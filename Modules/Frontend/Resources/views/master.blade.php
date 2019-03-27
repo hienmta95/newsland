@@ -21,7 +21,7 @@
     <!-- for Facebook -->
     <meta property="og:title" content="Trang thông tin nhà đất uy tín nhất Việt Nam" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="{{ asset('/images/vinhomecentralpark.jpg') }}" />
+    <meta property="og:image" content="{{ cxl_asset('/images/vinhomecentralpark.jpg') }}" />
     <meta property="og:url" content="{{ route('homepage') }}" />
     <meta property="og:description" content="Trang thông tin nhà đất uy tín nhất Việt Nam. Cung cấp các sản phẩm biệt thự liền kề, nhà phố thương mại,biệt thự biển, căn hộ chung cư, condotel, hometel, thổ cư ... tại Việt Nam." />
     <meta property="og:site_name" content="Nhà giá tốt" />
@@ -32,20 +32,20 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Trang thông tin nhà đất uy tín nhất Việt Nam" />
     <meta name="twitter:description" content="Trang thông tin nhà đất uy tín nhất Việt Nam. Cung cấp các sản phẩm biệt thự liền kề, nhà phố thương mại,biệt thự biển, căn hộ chung cư, condotel, hometel, thổ cư ... tại Việt Nam." />
-    <meta name="twitter:image" content="{{ asset('/images/vinhomecentralpark.jpg') }}" />
+    <meta name="twitter:image" content="{{ cxl_asset('/images/vinhomecentralpark.jpg') }}" />
 
-    <link rel="icon" href="{{ asset('/images/favicon.ico') }}" sizes="30x30">
-    <link href="{{ asset('/frontend/css/core.css') }}" rel="stylesheet" />
-    <link href="{{ asset('/frontend/css/font-awesome.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('/frontend/css/uikit.modify.css') }}" rel="stylesheet" />
-    <link href="{{ asset('/frontend/css/reset.css') }}" rel="stylesheet" />
-    <link href="{{ asset('/frontend/css/library.css') }}" rel="stylesheet" />
-    <link href="{{ asset('/frontend/css/flexslider.css') }}" rel="stylesheet" />
-    <link href="{{ asset('/frontend/css/jquery.fancybox.min.css') }}" rel="stylesheet" />
+    <link rel="icon" href="{{ cxl_asset('/images/favicon.ico') }}" sizes="30x30">
+    <link href="{{ cxl_asset('/frontend/css/core.css') }}" rel="stylesheet" />
+    <link href="{{ cxl_asset('/frontend/css/font-awesome.min.css') }}" rel="stylesheet" />
+    <link href="{{ cxl_asset('/frontend/css/uikit.modify.css') }}" rel="stylesheet" />
+    <link href="{{ cxl_asset('/frontend/css/reset.css') }}" rel="stylesheet" />
+    <link href="{{ cxl_asset('/frontend/css/library.css') }}" rel="stylesheet" />
+    <link href="{{ cxl_asset('/frontend/css/flexslider.css') }}" rel="stylesheet" />
+    <link href="{{ cxl_asset('/frontend/css/jquery.fancybox.min.css') }}" rel="stylesheet" />
 
-    <link href="{{ asset('/frontend/css/style.css') }}" rel="stylesheet" />
-    <script src="{{ asset('/frontend/js/jquery.js') }}"></script>
-    <script src="{{ asset('/frontend/js/uikit.min.js') }}"></script>
+    <link href="{{ cxl_asset('/frontend/css/style.css') }}" rel="stylesheet" />
+    <script src="{{ cxl_asset('/frontend/js/jquery.js') }}"></script>
+    <script src="{{ cxl_asset('/frontend/js/uikit.min.js') }}"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
@@ -65,12 +65,12 @@
             <div class="uk-flex uk-flex-middle uk-flex-space-between">
                 <!-- Các trang về tour dung logo-1.png -->
                 <h1 class="logo">
-                    <a href="{{ route('homepage') }}" title="Trang thông tin nhà đất uy tín nhất Việt Nam"><img src="{{ asset('/images/newsland.jpg') }}" alt="Trang thông tin nhà đất uy tín nhất Việt Nam" />
+                    <a href="{{ route('homepage') }}" title="Trang thông tin nhà đất uy tín nhất Việt Nam"><img src="{{ cxl_asset('/images/newsland.jpg') }}" alt="Trang thông tin nhà đất uy tín nhất Việt Nam" />
                     </a>
                     <span class="uk-hidden">Trang thông tin nhà đất uy tín nhất Việt Nam</span>
                 </h1>
                 <div class="logo uk-hidden">
-                    <a href="{{ route('homepage') }}" title="Trang thông tin nhà đất uy tín nhất Việt Nam"><img src="{{ asset('/images/newsland.jpg') }}" alt="Trang thông tin nhà đất uy tín nhất Việt Nam" /></a>
+                    <a href="{{ route('homepage') }}" title="Trang thông tin nhà đất uy tín nhất Việt Nam"><img src="{{ cxl_asset('/images/newsland.jpg') }}" alt="Trang thông tin nhà đất uy tín nhất Việt Nam" /></a>
                 </div>
 
 <!--                --><?php //var_dump($menuList); ?>
@@ -168,8 +168,8 @@
         <a class="moblie-menu-btn skin-1" href="#offcanvas" class="offcanvas" data-uk-offcanvas="{target:'#offcanvas'}">
             <span>Menu</span>
         </a>
-        <div class="logo"><a href="{{ route('homepage') }}" title=""><img src="{{ asset('/images/newsland.jpg') }}" alt="" /></a></div>
-        <a id="open-featured" href="#" title="Dự án bất động sản mới nhất"><img src="{{ asset('/images/news-copy.png') }}" alt=""></a>
+        <div class="logo"><a href="{{ route('homepage') }}" title=""><img src="{{ cxl_asset('/images/newsland.jpg') }}" alt="" /></a></div>
+        <a id="open-featured" href="#" title="Dự án bất động sản mới nhất"><img src="{{ cxl_asset('/images/news-copy.png') }}" alt=""></a>
     </section><!-- .upper -->
 
     <section class="lower">
@@ -197,7 +197,7 @@
     </div><!-- .page-body -->
 </section><!-- #body -->
 
-<footer class="footer" style="background: url({{ asset('/'). $info['image']['url'] }}) center no-repeat"><!-- FOOTER -->
+<footer class="footer" style="background: url({{ cxl_asset('/'). $info['image']['url'] }}) center no-repeat"><!-- FOOTER -->
     <section class="upper">
         <div class="uk-container uk-container-center">
             <div class="uk-grid uk-grid-medium">
@@ -351,7 +351,7 @@
         <a class="close-form" href="">+</a>
         <div class="panel-body">
             <div class="vin-logo">
-                <span class="image img-scaledown"><img src="{{ asset('/images/newsland.jpg') }}" alt="Logo" /></span>
+                <span class="image img-scaledown"><img src="{{ cxl_asset('/images/newsland.jpg') }}" alt="Logo" /></span>
             </div>
             <header class="panel-head">
                 <h3 class="heading-3">Đăng ký nhận tư vấn</h3>
@@ -415,7 +415,7 @@
                 @foreach($noibatMobile['bietthu'] as $item)
                 <li>
                     <article class="uk-clearfix article">
-                        <div class="thumb"><a class="image img-cover" href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
+                        <div class="thumb"><a class="image img-cover" href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ cxl_asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
                         <div class="infor">
                             <h3 class="title"><a href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">{{ $item['title'] }}</a></h3>
                             <div class="price">
@@ -491,16 +491,16 @@
         </ul>
     </div>
 </div><!-- #offcanvas -->
-<script src="{{ asset('/frontend/js/slider.min.js') }}"></script>
-<script src="{{ asset('/frontend/js/slideshow.min.js') }}"></script>
-<script src="{{ asset('/frontend/js/sticky.min.js') }}"></script>
-<script src="{{ asset('/frontend/js/lightbox.min.js') }}"></script>
-<script src="{{ asset('/frontend/js/jquery.flexslider-min.js') }}"></script>
-<script src="{{ asset('/frontend/js/function2.js') }}"></script>
-<script src="{{ asset('/frontend/js/library.js') }}"></script>
-<script src="{{ asset('/frontend/js/jquery.fancybox.min.js') }}"></script>
+<script src="{{ cxl_asset('/frontend/js/slider.min.js') }}"></script>
+<script src="{{ cxl_asset('/frontend/js/slideshow.min.js') }}"></script>
+<script src="{{ cxl_asset('/frontend/js/sticky.min.js') }}"></script>
+<script src="{{ cxl_asset('/frontend/js/lightbox.min.js') }}"></script>
+<script src="{{ cxl_asset('/frontend/js/jquery.flexslider-min.js') }}"></script>
+<script src="{{ cxl_asset('/frontend/js/function2.js') }}"></script>
+<script src="{{ cxl_asset('/frontend/js/library.js') }}"></script>
+<script src="{{ cxl_asset('/frontend/js/jquery.fancybox.min.js') }}"></script>
 
-<script src="{{ asset('/frontend/js/function.js') }}" type="text/javascript"></script>
+<script src="{{ cxl_asset('/frontend/js/function.js') }}" type="text/javascript"></script>
 
 <div id="modal-cart" class="uk-modal">
     <div class="uk-modal-dialog" style="width:768px;">

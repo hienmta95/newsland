@@ -27,7 +27,7 @@
             <tr><th>Nội dung </th><td>{!! $tintuc->noidung ? $tintuc->noidung : "<span class='not-set'>(not set)</span>"  !!}</td></tr>
             <tr><th>Ngày tạo</th><td><p class="c_timezone">{{ $tintuc->created_at }}</p></td></tr>
             <tr><th>Ngày sửa</th><td><p class="c_timezone">{{ $tintuc->updated_at }}</p></td></tr>
-            <tr><th>Hình ảnh</th><td>{!! $tintuc->image ? "<img  class='show-images' src='".asset('/').$tintuc->image->url."' alt=''>" : "<span class='not-set'>(not set)</span>"!!}</td></tr>
+            <tr><th>Hình ảnh</th><td>{!! $tintuc->image ? "<img  class='show-images' src='".cxl_asset('/').$tintuc->image->url."' alt=''>" : "<span class='not-set'>(not set)</span>"!!}</td></tr>
         </tbody>
     </table>
 

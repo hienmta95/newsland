@@ -27,7 +27,7 @@ class SlideController extends Controller
         return DataTables::of($slides)
             ->addColumn('image',function ($row){
                 $url = $row->image ? $row->image->url : "";
-                return "<img class='index-images' src='".asset('/') .$url."' alt=''>";
+                return "<img class='index-images' src='".cxl_asset('/') .$url."' alt=''>";
             })
             ->addColumn('action', function($row) {
                 return

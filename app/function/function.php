@@ -39,15 +39,15 @@ function stripUnicode($str){
 		'G'=>'Ĝ|Ğ|Ġ|Ģ',
 		'h'=>'ĥ|ħ',
 		'H'=>'Ĥ|Ħ',
-		'i'=>'í|ì|ỉ|ĩ|ị|î|ï|ī|ĭ|ǐ|į|ı',	  
+		'i'=>'í|ì|ỉ|ĩ|ị|î|ï|ī|ĭ|ǐ|į|ı',
 		'I'=>'Í|Ì|Ỉ|Ĩ|Ị|Î|Ï|Ī|Ĭ|Ǐ|Į|İ',
-		'ij'=>'ĳ',	  
+		'ij'=>'ĳ',
 		'IJ'=>'Ĳ',
-		'j'=>'ĵ',	  
+		'j'=>'ĵ',
 		'J'=>'Ĵ',
-		'k'=>'ķ',	  
+		'k'=>'ķ',
 		'K'=>'Ķ',
-		'l'=>'ĺ|ļ|ľ|ŀ|ł',	  
+		'l'=>'ĺ|ļ|ľ|ŀ|ł',
 		'L'=>'Ĺ|Ļ|Ľ|Ŀ|Ł',
 		'o'=>'ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ|ö|ø|ǿ|ǒ|ō|ŏ|ő',
 		'O'=>'Ó|Ò|Ỏ|Õ|Ọ|Ô|Ố|Ồ|Ổ|Ỗ|Ộ|Ơ|Ớ|Ờ|Ở|Ỡ|Ợ|Ö|Ø|Ǿ|Ǒ|Ō|Ŏ|Ő',
@@ -77,5 +77,17 @@ function stripUnicode($str){
 	return $str;
 }
 
+
+if (! function_exists('cxl_asset')) {
+    function cxl_asset($path)
+    {
+        $timestamp = \Carbon\Carbon::now()->timestamp;
+        $secure = request()->server('HTTP_X_FORWARDED_PROTO') == 'https';
+
+        $path = asset('/' . $path, $secure) . '?v='. $timestamp;
+
+        return $path;
+    }
+}
 
 ?>

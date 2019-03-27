@@ -59,11 +59,11 @@ Sửa: {{ $user->username ? $user->username : ''}}
 @endsection
 
 @push('scripts')
-    <link rel="stylesheet" href="<?php echo asset('admin/bower_components/bootstrap-fileinput/css/fileinput.css')?>" type="text/css">
-    <link rel="stylesheet" href="<?php echo asset('admin/bower_components/bootstrap-fileinput/css/fileinput-rtl.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo cxl_asset('admin/bower_components/bootstrap-fileinput/css/fileinput.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo cxl_asset('admin/bower_components/bootstrap-fileinput/css/fileinput-rtl.css')?>" type="text/css">
 
-    <script src="{!! asset('admin/bower_components/bootstrap-fileinput/js/plugins/piexif.js') !!}"></script>
-    <script src="{!! asset('admin/bower_components/bootstrap-fileinput/js/fileinput.js') !!}"></script>
+    <script src="{!! cxl_asset('admin/bower_components/bootstrap-fileinput/js/plugins/piexif.js') !!}"></script>
+    <script src="{!! cxl_asset('admin/bower_components/bootstrap-fileinput/js/fileinput.js') !!}"></script>
 
     <script>
         $(document).ready(function () {

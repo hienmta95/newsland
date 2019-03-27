@@ -14,7 +14,7 @@
             <ul class="uk-slideshow">
                 @foreach($slide as $item)
                     <li class="item">
-                        <a class="image img-cover" href="{{ $item['link'] }}" title="{{ $item['title'] }}"><img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ asset('/'). $item['image']['url'] }}" /></a>
+                        <a class="image img-cover" href="{{ $item['link'] }}" title="{{ $item['title'] }}"><img src="{{ cxl_asset('/'). $item['image']['url'] }}" alt="{{ cxl_asset('/'). $item['image']['url'] }}" /></a>
                     </li>
                 @endforeach
             </ul>
@@ -49,7 +49,7 @@
                                 <article class="uk-clearfix article">
                                     <div class="thumb img-zoomin">
                                         <a class="image img-cover" href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">
-                                            <img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" />
+                                            <img src="{{ cxl_asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" />
                                         </a>
                                     </div>
                                     <div class="infor">
@@ -85,7 +85,7 @@
                                     <article class="uk-clearfix article">
                                         <div class="thumb img-zoomin">
                                             <a class="image img-cover" href="{{ route('bietthu', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">
-                                                <img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" />
+                                                <img src="{{ cxl_asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" />
                                             </a>
                                         </div>
                                         <div class="infor">
@@ -123,7 +123,7 @@
 
                             {{--first tin tuc--}}
                             <article class="uk-clearfix featured">
-                                <div class="thumb img-zoomin"><a class="image img-cover" href="{{ route('tintuc', ['id' => $tintuc[0]['id'], 'slug' => $tintuc[0]['slug']]) }}" title="{{ $tintuc[0]['title'] }}"><img src="{{ asset('/'). $tintuc[0]['image']['url'] }}" alt="{{ $tintuc[0]['title'] }}" /></a></div>
+                                <div class="thumb img-zoomin"><a class="image img-cover" href="{{ route('tintuc', ['id' => $tintuc[0]['id'], 'slug' => $tintuc[0]['slug']]) }}" title="{{ $tintuc[0]['title'] }}"><img src="{{ cxl_asset('/'). $tintuc[0]['image']['url'] }}" alt="{{ $tintuc[0]['title'] }}" /></a></div>
                                 <div class="infor">
                                     <h3 class="title"><a href="{{ route('tintuc', ['id' => $tintuc[0]['id'], 'slug' => $tintuc[0]['slug']]) }}" title="{{ $tintuc[0]['title'] }}">{{ $tintuc[0]['title'] }}</a></h3>
                                 </div>
@@ -137,7 +137,7 @@
                                 @if($key != 0)
                                 <li>
                                     <article class="uk-clearfix article">
-                                        <div class="thumb img-zoomin"><a class="image img-cover" href="{{ route('tintuc', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
+                                        <div class="thumb img-zoomin"><a class="image img-cover" href="{{ route('tintuc', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ cxl_asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
                                         <div class="infor">
                                             <h3 class="title"><a href="{{ route('tintuc', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">{{ $item['title'] }}</a></h3>
                                             <div class="description">
@@ -170,7 +170,7 @@
                                 @foreach($noithat as $item)
                                 <li>
                                     <article class="uk-clearfix article">
-                                        <div class="thumb img-zoomin"><a class="image img-cover" href="{{ route('noithat', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
+                                        <div class="thumb img-zoomin"><a class="image img-cover" href="{{ route('noithat', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ cxl_asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
                                         <div class="infor">
                                             <h3 class="title"><a href="{{ route('noithat', ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}">{{ $item['title'] }}</a></h3>
                                             <div class="description">

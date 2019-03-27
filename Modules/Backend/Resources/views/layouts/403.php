@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Wrapper</title>
-    <link href="{{asset('/admin/dist/css/AdminLTE.css')}}" rel="stylesheet">
-    <link href="{{asset('/admin/bower_components/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{cxl_asset('/admin/dist/css/AdminLTE.css')}}" rel="stylesheet">
+    <link href="{{cxl_asset('/admin/bower_components/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
 
 </head>
 <body >

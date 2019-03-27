@@ -27,7 +27,7 @@
             <tr><th>Nội dung </th><td>{!! $noithat->noidung ? $noithat->noidung : "<span class='not-set'>(not set)</span>"  !!}</td></tr>
             <tr><th>Ngày tạo</th><td><p class="c_timezone">{{ $noithat->created_at }}</p></td></tr>
             <tr><th>Ngày sửa</th><td><p class="c_timezone">{{ $noithat->updated_at }}</p></td></tr>
-            <tr><th>Hình ảnh</th><td>{!! $noithat->image ? "<img  class='show-images' src='".asset('/').$noithat->image->url."' alt=''>" : "<span class='not-set'>(not set)</span>"!!}</td></tr>
+            <tr><th>Hình ảnh</th><td>{!! $noithat->image ? "<img  class='show-images' src='".cxl_asset('/').$noithat->image->url."' alt=''>" : "<span class='not-set'>(not set)</span>"!!}</td></tr>
         </tbody>
     </table>
 

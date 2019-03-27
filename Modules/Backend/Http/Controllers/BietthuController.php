@@ -35,7 +35,7 @@ class bietthuController extends Controller
             })
             ->addColumn('image',function ($row){
                 $url = $row->image ? $row->image->url : "";
-                return "<img class='index-images' src='".asset('/') .$url."' alt=''>";
+                return "<img class='index-images' src='".cxl_asset('/') .$url."' alt=''>";
             })
             ->editColumn('tomtat',function ($row){
                 return "<p>". mb_convert_encoding(substr($row->mota, 0, 100), 'UTF-8', 'UTF-8') ."</p>";
@@ -230,4 +230,9 @@ class bietthuController extends Controller
         return 1;
     }
 
+    public function getBietthuNoidung(Request $request)
+    {
+        $bietthu = Bietthu::findOrFail($request->id);
+        return view('backend::bietthu.noidung', compact(['bietthu']));
+    }
 }

@@ -27,7 +27,7 @@
             <tr><th>Nội dung </th><td>{!! $gioithieu->noidung ? $gioithieu->noidung : "<span class='not-set'>(not set)</span>"  !!}</td></tr>
             <tr><th>Ngày tạo</th><td><p class="c_timezone">{{ $gioithieu->created_at }}</p></td></tr>
             <tr><th>Ngày sửa</th><td><p class="c_timezone">{{ $gioithieu->updated_at }}</p></td></tr>
-            <tr><th>Hình ảnh</th><td>{!! $gioithieu->image ? "<img  class='show-images' src='".asset('/').$gioithieu->image->url."' alt=''>" : "<span class='not-set'>(not set)</span>"!!}</td></tr>
+            <tr><th>Hình ảnh</th><td>{!! $gioithieu->image ? "<img  class='show-images' src='".cxl_asset('/').$gioithieu->image->url."' alt=''>" : "<span class='not-set'>(not set)</span>"!!}</td></tr>
         </tbody>
     </table>
 

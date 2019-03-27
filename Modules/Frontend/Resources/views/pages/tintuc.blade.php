@@ -35,7 +35,7 @@
                         <li>
                             <article class="uk-clearfix article">
                                 <div class="thumb">
-                                    <a class="image img-cover" href="{{ route($trang['route2'], ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a>
+                                    <a class="image img-cover" href="{{ route($trang['route2'], ['id' => $item['id'], 'slug' => $item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ cxl_asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a>
                                 </div>
                                 <div class="infor">
                                     <div class="meta">{{ date_format(date_create($item['updated_at']),"d/m/Y") }}</div>

@@ -2,7 +2,7 @@
     <!-- Logo -->
     <a href="{{ route('backend.dashboard') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><img src="{{asset("/images/icon_logo.png")}}"></span>
+        <span class="logo-mini"><img src="{{cxl_asset("/images/icon_logo.png")}}"></span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg"> - NewsLand Admin - </span>
     </a>
@@ -24,7 +24,7 @@
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="{{asset('/images/spicemart-icon.png')}}" class="img-circle" alt="User Image">
+                            <img src="{{cxl_asset('/images/spicemart-icon.png')}}" class="img-circle" alt="User Image">
                             <p>
                                 {!!  $user ? $user->username : "" !!} - Admin
                             </p>

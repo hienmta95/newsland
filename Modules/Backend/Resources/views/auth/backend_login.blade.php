@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Login</title>
-    <link href="{{asset('/backend/dist/css/AdminLTE.css')}}" rel="stylesheet">
-    <link href="{{asset('/backend/bower_components/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
-    <script src="{{asset('/js/app.js')}}"></script>
+    <link href="{{cxl_asset('/backend/dist/css/AdminLTE.css')}}" rel="stylesheet">
+    <link href="{{cxl_asset('/backend/bower_components/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <script src="{{cxl_asset('/js/app.js')}}"></script>
 </head>
 <body class="bg-black">
         <div class="login-box" >

@@ -6,7 +6,7 @@ Tạo mới bất động sản
 <ul class="breadcrumb">
     <li><a href="{{ route('backend.dashboard') }}">Home</a></li>
     <li><a href="{{ route('backend.bietthu.index') }}">Danh sách</a></li>
-    <li class="active">Tạo mới sản phẩm  </li>
+    <li class="active">Tạo mới bất động sản  </li>
 </ul>
 @endsection
 @section('content')
@@ -14,10 +14,6 @@ Tạo mới bất động sản
     <div class="sp-push-form">
         <form id="bietthu_create" action="{{ route('backend.bietthu.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
-
-            <div class="form-group">
-                <a href="{{ route('backend.bietthu.noidung.get', ['id' => ]) }}" class="btn btn-success">Lưu</a>
-            </div>
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['title']) ? 'has-error' : 'has-success'}} @endif" >
                 <label class="control-label">Tiêu đề bất động sản <span class="required">*</span></label>
@@ -238,13 +234,13 @@ Tạo mới bất động sản
 
 @push('scripts')
 
-    <link rel="stylesheet" href="<?php echo asset('backend/bower_components/bootstrap-fileinput/css/fileinput.css')?>" type="text/css">
-    <link rel="stylesheet" href="<?php echo asset('backend/bower_components/bootstrap-fileinput/css/fileinput-rtl.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo cxl_asset('backend/bower_components/bootstrap-fileinput/css/fileinput.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo cxl_asset('backend/bower_components/bootstrap-fileinput/css/fileinput-rtl.css')?>" type="text/css">
 
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/plugins/piexif.js') !!}"></script>
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/plugins/sortable.js') !!}"></script>
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/plugins/purify.js') !!}"></script>
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/fileinput.js') !!}"></script>
+    <script src="{!! cxl_asset('backend/bower_components/bootstrap-fileinput/js/plugins/piexif.js') !!}"></script>
+    <script src="{!! cxl_asset('backend/bower_components/bootstrap-fileinput/js/plugins/sortable.js') !!}"></script>
+    <script src="{!! cxl_asset('backend/bower_components/bootstrap-fileinput/js/plugins/purify.js') !!}"></script>
+    <script src="{!! cxl_asset('backend/bower_components/bootstrap-fileinput/js/fileinput.js') !!}"></script>
 
     <script>
         $(document).on('ready', function() {

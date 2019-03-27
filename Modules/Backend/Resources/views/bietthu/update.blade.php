@@ -219,7 +219,7 @@
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['image']) ? 'has-error' : 'has-success'}} @endif">
                 <div>
-                    <img class="show-images"  class="img-thumbnail" src="{!! $bietthu->image ? asset('/').$bietthu->image->url : ""!!}" alt="web_image" title="image">
+                    <img class="show-images"  class="img-thumbnail" src="{!! $bietthu->image ? cxl_asset('/').$bietthu->image->url : ""!!}" alt="web_image" title="image">
                 </div>
                 <label class="control-label">Hình ảnh thumbnail <span class="required">*</span> </label>
                 <input type="hidden" name="image_old" value="{{ $bietthu->image_id  }}">
@@ -245,13 +245,13 @@
 
 @push('scripts')
 
-    <link rel="stylesheet" href="<?php echo asset('backend/bower_components/bootstrap-fileinput/css/fileinput.css')?>" type="text/css">
-    <link rel="stylesheet" href="<?php echo asset('backend/bower_components/bootstrap-fileinput/css/fileinput-rtl.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo cxl_asset('backend/bower_components/bootstrap-fileinput/css/fileinput.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo cxl_asset('backend/bower_components/bootstrap-fileinput/css/fileinput-rtl.css')?>" type="text/css">
 
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/plugins/piexif.js') !!}"></script>
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/plugins/sortable.js') !!}"></script>
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/plugins/purify.js') !!}"></script>
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/fileinput.js') !!}"></script>
+    <script src="{!! cxl_asset('backend/bower_components/bootstrap-fileinput/js/plugins/piexif.js') !!}"></script>
+    <script src="{!! cxl_asset('backend/bower_components/bootstrap-fileinput/js/plugins/sortable.js') !!}"></script>
+    <script src="{!! cxl_asset('backend/bower_components/bootstrap-fileinput/js/plugins/purify.js') !!}"></script>
+    <script src="{!! cxl_asset('backend/bower_components/bootstrap-fileinput/js/fileinput.js') !!}"></script>
 
     <script>
         $(document).on('ready', function() {
@@ -269,7 +269,7 @@
                 allowedFileExtensions: ["jpg", "png", "gif", "jpeg"],
                 initialPreview: [
                     @foreach($bietthu->images as $item)
-                        "<img class='kv-preview-data file-preview-image' src='{{ asset('/').$item->url }}'>",
+                        "<img class='kv-preview-data file-preview-image' src='{{ cxl_asset('/').$item->url }}'>",
 
                     @endforeach
                 ],

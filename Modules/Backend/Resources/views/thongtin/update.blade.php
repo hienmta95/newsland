@@ -52,7 +52,7 @@ Update thông tin
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['image']) ? 'has-error' : 'has-success'}} @endif">
                 <div>
-                    <img class="show-images"  class="img-thumbnail" src="{!! $info->image ? asset('/').$info->image->url : ""!!}" alt="web_image" title="image">
+                    <img class="show-images"  class="img-thumbnail" src="{!! $info->image ? cxl_asset('/').$info->image->url : ""!!}" alt="web_image" title="image">
                 </div>
                 <label class="control-label">Banner footer </label>
                 <input type="hidden" name="image_old" value="{{ $info->banner_footer  }}">
@@ -70,8 +70,8 @@ Update thông tin
 @endsection
 
 @push('scripts')
-    <link rel="stylesheet" href="<?php echo asset('backend/bower_components/bootstrap-fileinput/css/fileinput.css')?>" type="text/css">
-    <link rel="stylesheet" href="<?php echo asset('backend/bower_components/bootstrap-fileinput/css/fileinput-rtl.css')?>" type="text/css">
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/plugins/piexif.js') !!}"></script>
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/fileinput.js') !!}"></script>
+    <link rel="stylesheet" href="<?php echo cxl_asset('backend/bower_components/bootstrap-fileinput/css/fileinput.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo cxl_asset('backend/bower_components/bootstrap-fileinput/css/fileinput-rtl.css')?>" type="text/css">
+    <script src="{!! cxl_asset('backend/bower_components/bootstrap-fileinput/js/plugins/piexif.js') !!}"></script>
+    <script src="{!! cxl_asset('backend/bower_components/bootstrap-fileinput/js/fileinput.js') !!}"></script>
 @endpush

@@ -42,7 +42,7 @@
                             @foreach($item['images'] as $img)
                             <li>
                                 <div class="thumb">
-                                    <a class="image img-cover" href="{{ asset('/'). $img['url'] }}" title="Ảnh chi tiết dự án" data-uk-lightbox="{group:'prdGallerys'}"><img src="{{ asset('/'). $img['url'] }}" alt="" /></a>
+                                    <a class="image img-cover" href="{{ cxl_asset('/'). $img['url'] }}" title="Ảnh chi tiết dự án" data-uk-lightbox="{group:'prdGallerys'}"><img src="{{ cxl_asset('/'). $img['url'] }}" alt="" /></a>
                                 </div>
                             </li>
                             @endforeach
@@ -54,7 +54,7 @@
                             @foreach($item['images'] as $img)
                             <li>
                                 <div class="thumb">
-                                    <span class="image img-cover"><img src="{{ asset('/'). $img['url'] }}" alt="" /></span>
+                                    <span class="image img-cover"><img src="{{ cxl_asset('/'). $img['url'] }}" alt="" /></span>
                                 </div>
                             </li>
                             @endforeach
@@ -206,7 +206,7 @@
                 @foreach($same as $item)
                 <li>
                     <article class="uk-clearfix article">
-                        <div class="thumb"><a class="image img-cover" href="{{ route('bietthu', ['id'=>$item['id'], 'slug'=>$item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
+                        <div class="thumb"><a class="image img-cover" href="{{ route('bietthu', ['id'=>$item['id'], 'slug'=>$item['slug']]) }}" title="{{ $item['title'] }}"><img src="{{ cxl_asset('/'). $item['image']['url'] }}" alt="{{ $item['title'] }}" /></a></div>
                         <div class="infor">
                             <h3 class="title"><a href="{{ route('bietthu', ['id'=>$item['id'], 'slug'=>$item['slug']]) }}" title="{{ $item['title'] }}">{{ $item['title'] }}</a></h3>
                             <div class="price">

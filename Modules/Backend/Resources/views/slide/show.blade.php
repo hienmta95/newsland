@@ -20,7 +20,7 @@ Chi tiết: {{ $slide->title ? $slide->title : "" }}
 
     <table id="w0" class="table table-striped table-bordered detail-view">
         <tbody>
-            <tr><th>Image</th><td>{!! $slide->image ? "<img  class='show-images' src='".asset('/').$slide->image->url."' alt=''>" : "<span class='not-set'>(not set)</span>"!!}</td></tr>
+            <tr><th>Image</th><td>{!! $slide->image ? "<img  class='show-images' src='".cxl_asset('/').$slide->image->url."' alt=''>" : "<span class='not-set'>(not set)</span>"!!}</td></tr>
             <tr><th>ID</th><td>{{ $slide->id }}</td></tr>
             <tr><th>Tiêu đề</th><td>{!! $slide->title ? $slide->title : "<span class='not-set'>(not set)</span>"  !!}</td></tr>
             <tr><th>Link to</th><td>{!! $slide->link ? $slide->link : "<span class='not-set'>(not set)</span>"  !!}</td></tr>
