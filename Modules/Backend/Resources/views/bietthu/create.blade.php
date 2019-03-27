@@ -15,6 +15,10 @@ Tạo mới bất động sản
         <form id="bietthu_create" action="{{ route('backend.bietthu.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
 
+            <div class="form-group">
+                <a href="{{ route('backend.bietthu.noidung.get', ['id' => ]) }}" class="btn btn-success">Lưu</a>
+            </div>
+
             <div class="form-group @if (count($errors->all())) {{$errors->has(['title']) ? 'has-error' : 'has-success'}} @endif" >
                 <label class="control-label">Tiêu đề bất động sản <span class="required">*</span></label>
                 <input type="text" class="form-control{{ $errors->has('title') ? ' has-error' : '' }}" name="title" value="{{ old('title') }}">

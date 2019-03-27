@@ -35,9 +35,9 @@ Tạo mới giới thiệu
 
             <div class="form-group @if (count($errors->all())) {{$errors->has(['noidung']) ? 'has-error' : 'has-success'}} @endif">
                 <label class="control-label">Nội dung<span class="required">*</span></label>
-                <textarea id="noidung" class="form-control{{ $errors->has('noidung') ? ' has-error' : '' }}" name="noidung" maxlength="255" rows="3">{{ old('noidung') }}</textarea>
+                <textarea id="noidung2" class="form-control{{ $errors->has('noidung') ? ' has-error' : '' }}" name="noidung" maxlength="255" rows="3">{{ old('noidung') }}</textarea>
                 <script type="text/javascript">
-                    var editor = CKEDITOR.replace('noidung',{
+                    var editor = CKEDITOR.replace('noidung2',{
                         language:'vi',
                         filebrowserBrowseUrl :'/js/ckfinder/ckfinder.html',
                         filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?type=Images',
@@ -47,6 +47,7 @@ Tạo mới giới thiệu
                         filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
                     });
                 </script>
+
                 <div class="help-block">@if($errors->has('noidung')) {{ $errors->first('noidung') }} @endif</div>
             </div>
 
@@ -64,16 +65,17 @@ Tạo mới giới thiệu
                 <button type="submit" class="btn btn-success">Lưu</button>
             </div>
 
+            <a href="{{ route('ckfinder_examples', ['example' => 'full-page-open']) }}" class="button-a button-a-background" target="_blank">Open CKFinder</a>
+
         </form>
     </div>
+
+    @include('ckfinder::setup')
 
 @endsection
 
 @push('scripts')
-
-    <link rel="stylesheet" href="<?php echo asset('backend/bower_components/bootstrap-fileinput/css/fileinput.css')?>" type="text/css">
-    <link rel="stylesheet" href="<?php echo asset('backend/bower_components/bootstrap-fileinput/css/fileinput-rtl.css')?>" type="text/css">
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/plugins/piexif.js') !!}"></script>
-    <script src="{!! asset('backend/bower_components/bootstrap-fileinput/js/fileinput.js') !!}"></script>
+    {{--<script type="text/javascript" src="{{ asset('/js/ckfinder/ckfinder.js') }}"></script>--}}
+    {{--<script>CKFinder.config( { connectorPath: '{{ asset('/js/ckfinder/connector') }}' } );</script>--}}
 
 @endpush

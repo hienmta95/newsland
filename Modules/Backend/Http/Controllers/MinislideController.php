@@ -23,7 +23,7 @@ class MinislideController extends Controller
 
     public function indexData()
     {
-        $minislides = Minislide::with(['image'])->select('minislides.*');
+        $minislides = Minislide::with(['image'])->get();
         return DataTables::of($minislides)
             ->addColumn('image',function ($row){
                 $url = $row->image ? $row->image->url : "";

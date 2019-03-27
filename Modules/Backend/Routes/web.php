@@ -21,6 +21,7 @@ Route::group(['prefix' => 'admin'], function() {
     Route::get('/menu/indexData', 'MenuController@indexData')->name('backend.menu.indexData');
     Route::get('/gioithieu/indexData', 'GioithieuController@indexData')->name('backend.gioithieu.indexData');
     Route::get('/video/indexData', 'VideoController@indexData')->name('backend.video.indexData');
+    Route::get('/mucnoidung/indexData', 'MucnoidungController@indexData')->name('backend.mucnoidung.indexData');
     Route::get('/bietthu/indexData', 'BietthuController@indexData')->name('backend.bietthu.indexData');
 
 
@@ -176,6 +177,15 @@ Route::group(['prefix' => 'admin'], function() {
         Route::delete('/video/delete/{id}', 'VideoController@destroy')->name('backend.video.destroy');
 
         // Management
+        Route::get('/mucnoidung', 'MucnoidungController@index')->name('backend.mucnoidung.index');
+        Route::get('/mucnoidung/create', 'MucnoidungController@create')->name('backend.mucnoidung.create');
+        Route::post('/mucnoidung', 'MucnoidungController@store')->name('backend.mucnoidung.store');
+        Route::get('/mucnoidung/view/{id}', 'MucnoidungController@show')->name('backend.mucnoidung.show');
+        Route::get('/mucnoidung/update/{id}', 'MucnoidungController@edit')->name('backend.mucnoidung.edit');
+        Route::put('/mucnoidung/update/{id}', 'MucnoidungController@update')->name('backend.mucnoidung.update');
+        Route::delete('/mucnoidung/delete/{id}', 'MucnoidungController@destroy')->name('backend.mucnoidung.destroy');
+
+        // Management
         Route::get('/bietthu', 'BietthuController@index')->name('backend.bietthu.index');
         Route::get('/bietthu/create', 'BietthuController@create')->name('backend.bietthu.create');
         Route::post('/bietthu', 'BietthuController@store')->name('backend.bietthu.store');
@@ -183,6 +193,10 @@ Route::group(['prefix' => 'admin'], function() {
         Route::get('/bietthu/update/{id}', 'BietthuController@edit')->name('backend.bietthu.edit');
         Route::put('/bietthu/update/{id}', 'BietthuController@update')->name('backend.bietthu.update');
         Route::delete('/bietthu/delete/{id}', 'BietthuController@destroy')->name('backend.bietthu.destroy');
+
+        Route::get('/bietthu-noidung/{id}', 'BietthuController@getBietthuNoidung')->name('backend.bietthu.noidung.get');
+        Route::post('/bietthu-noidung/{id}', 'BietthuController@postBietthuNoidung')->name('backend.bietthu.noidung.post');
+
 
     });
 });

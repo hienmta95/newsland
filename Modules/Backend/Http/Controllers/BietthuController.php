@@ -40,7 +40,7 @@ class bietthuController extends Controller
             ->editColumn('tomtat',function ($row){
                 return "<p>". mb_convert_encoding(substr($row->mota, 0, 100), 'UTF-8', 'UTF-8') ."</p>";
             })
-            ->addColumn('action', function($row) {
+            ->addColumn('hanhdong', function($row) {
                 return
                     '<form method="POST" action="'. route("backend.bietthu.destroy", $row->id) .'" onsubmit="return confirm('."'Are you sure you want to delete this item?'".');">
                 <input name="_method" value="DELETE" type="hidden">
@@ -52,7 +52,7 @@ class bietthuController extends Controller
                 </button>
             </form>';
             })
-            ->rawColumns(['action' => 'action', 'tomtat' => 'tomtat', 'image' => 'image', 'quan' => 'quan', 'theloai' => 'theloai'])
+            ->rawColumns(['hanhdong' => 'hanhdong', 'tomtat' => 'tomtat', 'image' => 'image', 'quan' => 'quan', 'theloai' => 'theloai'])
             ->addIndexColumn()
             ->make(true);
     }
@@ -78,12 +78,12 @@ class bietthuController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'image' => 'required',
+//            'image' => 'required',
             'trangthai' => 'required',
             'mota' => 'required',
             'quan_id' => 'required',
             'theloai_id' => 'required',
-            'images' => 'required'
+//            'images' => 'required'
         ]);
 
         $image_id = 0;

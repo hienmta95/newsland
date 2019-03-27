@@ -21,7 +21,7 @@ class menuController extends Controller
 
     public function indexData()
     {
-        $menus = menu::select('menus.*');
+        $menus = Menu::all();
         return DataTables::of($menus)
             ->addColumn('action', function($row) {
                 return

@@ -23,7 +23,7 @@ class theloaiController extends Controller
 
     public function indexData()
     {
-        $theloais = Theloai::select('theloais.*');
+        $theloais = Theloai::all();
         return DataTables::of($theloais)
             ->editColumn('active',function ($row){
                 if($row->active == 1)

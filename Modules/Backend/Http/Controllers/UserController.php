@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Modules\Backend\Components\ImageFile;
-use DataTables;
 use Hash;
+use DataTables;
 
 class UserController extends Controller
 {

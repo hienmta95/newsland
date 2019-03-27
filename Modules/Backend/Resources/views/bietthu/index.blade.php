@@ -23,15 +23,13 @@
                         <th class="un-orderable-col">Tiêu đề </th>
                         <th class="un-orderable-col">Tên trên link</th>
                         <th class="un-orderable-col">Quận/huyện</th>
-                        <th class="un-orderable-col">Thuộc loại</th>
-                        <th class="un-orderable-col">Tóm tắt</th>
-                        <th class="orderable-col">Ngày lập</th>
-                        <th class="un-orderable-col">Hành động</th>
+						<th class="un-orderable-col">Thuộc loại</th>
+						<th class="orderable-col">Ngày lập</th>
+						<th class="un-orderable-col">Hành động</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th></th>
                         <th></th>
                         <th></th>
                         <th></th>
@@ -58,7 +56,7 @@
         pageLength: 20,
         lengthChange: false,
         lengthMenu: [10, 20, 50, 100],
-        ajax: '{!! route('backend.bietthu.indexData') !!}',
+        ajax: '{{ route('backend.bietthu.indexData') }}',
         dom: '<"top"i>rt<"bottom"p><"clear">',
         order: [ [1, "desc"] ],
         language: {
@@ -74,9 +72,9 @@
             {data: 'slug', name: 'slug', orderable: false},
             {data: 'quan', name: 'quan', orderable: false},
             {data: 'theloai', name: 'theloai', orderable: false},
-            {data: 'tomtat', name: 'tomtat', orderable: false},
+            //{data: 'tomtat', name: 'tomtat', orderable: false},
             {data: 'updated_at', name: 'updated_at'},
-            {data: 'action', name: 'action', orderable: false, searchable: false},
+            {data: 'hanhdong', name: 'hanhdong', orderable: false, searchable: false},
         ],
         "initComplete": function () {
             $('#bietthu-table_paginate').css({"float": "left"});

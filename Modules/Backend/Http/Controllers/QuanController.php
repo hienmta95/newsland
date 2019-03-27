@@ -4,6 +4,7 @@ namespace Modules\Backend\Http\Controllers;
 
 use App\Quan;
 use App\Thanhpho;
+use App\Bietthu;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
@@ -23,10 +24,10 @@ class quanController extends Controller
 
     public function indexData()
     {
-        $quans = Quan::select('quans.*');
+        $quans = Quan::with(['thanhpho'])->get();
         return DataTables::of($quans)
-            ->editColumn('thanhpho',function ($row){
-                return "<p>". $row->thanhpho->title ."</p>";
+            ->addColumn('thanhpho',function ($row){
+                return $row->thanhpho->title;
             })
             ->addColumn('action', function($row) {
                 return
@@ -81,7 +82,7 @@ class quanController extends Controller
     public function show(Request $request)
     {
         $id = $request->id;
-        $quan = Quan::findOrFail($id);
+        $quan = quan::findOrFail($id);
         if($quan)
             return view('backend::quan.show', compact(['quan']));
         return redirect()->route('backend.quan.index');

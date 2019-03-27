@@ -3,9 +3,12 @@
 namespace Modules\Backend\Http\Controllers;
 
 use App\Thanhpho;
+use App\Quan;
+use App\Bietthu;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Modules\Backend\Components\ImageFile;
 use DataTables;
 
 class thanhphoController extends Controller
@@ -21,7 +24,7 @@ class thanhphoController extends Controller
 
     public function indexData()
     {
-        $thanhphos = Thanhpho::select('thanhphos.*');
+        $thanhphos = Thanhpho::all();
         return DataTables::of($thanhphos)
             ->editColumn('tenmien',function ($row){
                 $tenmien = $row->tenmien == "mienbac" ? "Miền Bắc" : ($row->tenmien == "mientrung" ? "Miền Trung" : "Miền Nam");

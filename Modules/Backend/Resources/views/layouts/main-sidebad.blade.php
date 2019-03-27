@@ -54,6 +54,9 @@ if (! function_exists('active_route')) {
                 'backend.bietthu.index','backend.bietthu.show',
                 'backend.bietthu.create','backend.bietthu.edit',
 
+                'backend.mucnoidung.index','backend.mucnoidung.show',
+                'backend.mucnoidung.create','backend.mucnoidung.edit',
+
                 'backend.dashboard'
             ];
         }
@@ -122,7 +125,7 @@ if (! function_exists('active_route')) {
                 <li class="{{ active_route('backend.tintuc.*') }}"><a href="{{ route('backend.tintuc.index') }}">» Tin tức </a></li>
                 <li class="{{ active_route('backend.video.*') }}"><a href="{{ route('backend.video.index') }}">» Videos </a></li>
                 <li class="{{ active_route('backend.noithat.*') }}"><a href="{{ route('backend.noithat.index') }}">» Bài viết về nội thất </a></li>
-                <li class="{{ active_route('backend.gioithieu.*') }}"><a href="{{ route('backend.noithat.index') }}">» Bài viết giới thiệu </a></li>
+                <li class="{{ active_route('backend.gioithieu.*') }}"><a href="{{ route('backend.gioithieu.index') }}">» Bài viết giới thiệu </a></li>
             </ul>
         </li>
         <!-- End User management data -->
@@ -156,6 +159,7 @@ if (! function_exists('active_route')) {
             </a>
             <ul class="treeview-menu">
                 <li class="{{ active_route('backend.bietthu.*') }}{{ active_route('backend.dashboard') }}"><a href="{{ route('backend.bietthu.index') }}">» Bất động sản</a></li>
+                <li class="{{ active_route('backend.mucnoidung.*') }}"><a href="{{ route('backend.mucnoidung.index') }}">» Các mục nội dung của BĐS</a></li>
 
             </ul>
         </li>
